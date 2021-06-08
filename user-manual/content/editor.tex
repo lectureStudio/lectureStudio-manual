@@ -9,6 +9,27 @@
 	\label{fig:\lectEditor}
 \end{figure}
 
+\subsection{Bearbeitungs-Funktionen}
+\begin{longtable}{p{1cm}p{12cm}}
+	\begin{minipage}{.035\textwidth}
+		\includegraphics[width=\linewidth]{editor/export-recording}
+	\end{minipage}
+	& Zeigt Bedien- und Einstellungselemente an, um die Aufzeichnung in ein komprimiertes Format zu konvertieren. \\
+
+	\begin{minipage}{.035\textwidth}
+		\includegraphics[width=\linewidth]{editor/noise-reduction}
+	\end{minipage}
+	& Zeigt Bedien- und Einstellungselemente für die Rauschunterdrückung an. \\
+
+	\begin{minipage}{.035\textwidth}
+		\includegraphics[width=\linewidth]{editor/page-events}
+	\end{minipage}
+	& Zeigt alle Annotationen zu der aktuell angezeigten Folie an. Über diese Ansicht können einzelne Annotationen auf der Folie entfernt werden. \\
+\end{longtable}
+
+\subsection{Folienvorschau}
+In diesem Bereich werden Miniaturbilder für die einzelnen aufgezeichneten Folien angezeigt. Die nächste Folie ist oben sichtbar. Um eine Folie auszuwählen, klicken Sie auf das jeweilige Miniaturbild. Beim Folienwechsel passt sich die Folienvorschau automatisch an und zeigt die nächsten Folien beginnend mit der darauffolgenden Folie von oben nach unten an. Sie haben auch die Möglichkeit die Aufzeichnung durchzublättern, indem Sie die Bildlaufleiste verwenden, um sich vorwärts und rückwärts durch die Aufzeichnung zu bewegen. Der blaue Rahmen um das Miniaturbild kennzeichnet die Folie, die gerade angezeigt wird.
+
 \subsection{Werkzeuge}
 \label{section:editor:toolbar}
 
@@ -71,6 +92,11 @@
 	\end{minipage}
 	& Auswahlbereich zusammenführen. \\
 \end{longtable}
+
+
+\subsection{Annotationen}
+In der Annotationen-Leiste werden Markierungen für alle aufgezeichneten Seitenwechsel und Annotationen angezeigt. Die Markierungen passen sich automatisch an den Zeitabschnitt an, den Sie sich gerade anschauen, reinzoomen oder durchblättern. Die Seitenwechsel werden durch ein Rechteck mit der Seitennummer markiert. Alle Annotationen werden durch jeweils kleine rote Balken markiert. Folgen viele Annotationen, die zeitlich nah beieinander durchgeführt wurden, so kann es zu einem breiten roten Balken führen. Dies ist vorallem bei Stift-Annotationen der Fall, da jeder Punkt, den der Stift durchläuft, als eine einzelne Markierung zählt.
+
 
 \section{Anwendungsszenarien}
 In diesem Kapitel werden häufige Anwendungsszenarien sowie deren Nutzung in \lectEditor{} beschrieben.
@@ -174,7 +200,7 @@ Folien samt Annotationen lassen sich auch ohne die Auswahl mit Zeitmarkern in de
 
 
 \subsection{Folie ersetzen}
-Sie können Folien im aufgezeichneten Dokument ersetzen. Diese Funktion ist hilfreich, wenn Sie eine Aufzeichnung wiederverwenden und zum Beispiel nur das Datum anpassen möchten, oder Fehler wie beispielsweise Rechtschreibfehler beheben möchten. Alle Annotationen, die auf dieser Folie gemacht wurden bleiben unverändert erhalten.
+Sie können Folien im aufgezeichneten Dokument ersetzen. Diese Funktion ist hilfreich, wenn Sie eine Aufzeichnung wiederverwenden und zum Beispiel nur das Datum anpassen möchten, oder Fehler wie beispielsweise Rechtschreibfehler beheben möchten. Alle Annotationen und Audio, die auf dieser Folie gemacht wurden, bleiben unverändert erhalten.
 
 \begin{enumerate}
 	\item Navigieren Sie auf eine Folie, die Sie ersetzen möchten.

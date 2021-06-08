@@ -40,7 +40,7 @@ Richten Sie nun das gewünschte Mikrofon ein (\autoref{fig:presenter-audio-setti
 	
 	Klicken Sie im Dialog (\autoref{fig:presenter-audio-settings-auto}) auf \textbf{Beginnen} und sprechen Sie eine Zeit lang in das ausgewählte Mikrofon. Nachdem Sie auf \textbf{Fertig} gecklickt haben, wird die Mikrofonlautstärke auf den maximal erreichten Pegel eingestellt.
 
-	\item Machen Sie eine kurze Aufzeichnung [4] und überprüfen diese auf Rauschen, Nebengeräusche, Hall, usw. nach.
+	\item Machen Sie eine kurze Aufzeichnung [4] und überprüfen diese auf Rauschen, Nebengeräusche, Hall, usw.
 	\item Abschließend klicken Sie auf den Button \textbf{Schließen}, um die Einstellungen zu speichern.
 \end{enumerate}
 
@@ -241,23 +241,23 @@ Sobald Sie ein PDF-Dokument oder ein Whiteboard geöffnet haben, finden Sie die 
 Die dargestellten Anzeigeelemente, von links nach rechts:\\
 
 \begin{longtable}{p{1cm}p{12cm}}
-	\begin{minipage}{.06\textwidth}
+	\begin{minipage}{.05\textwidth}
 		\includegraphics[width=\linewidth]{presenter/clock-indicator}
 	\end{minipage}
 	& Aktuelle Uhrzeit. \\
-	\begin{minipage}{.06\textwidth}
+	\begin{minipage}{.05\textwidth}
 		\includegraphics[width=\linewidth]{presenter/record-indicator}
 	\end{minipage}
 	& Gibt an, ob die Aufnahme gerade läuft. Orangener Hintergrund steht für \quote{pausiert}. \\
-	\begin{minipage}{.06\textwidth}
+	\begin{minipage}{.05\textwidth}
 		\includegraphics[width=\linewidth]{presenter/stream-indicator}
 	\end{minipage}
 	& Gibt an, ob ein Echtzeit-Stream aktiv ist.. \\
-	\begin{minipage}{.06\textwidth}
+	\begin{minipage}{.05\textwidth}
 		\includegraphics[width=\linewidth]{presenter/messenger-indicator}
 	\end{minipage}
 	& Gibt an, ob Web-Nachrichten aktiviert sind. \\
-	\begin{minipage}{.06\textwidth}
+	\begin{minipage}{.05\textwidth}
 		\includegraphics[width=\linewidth]{presenter/quiz-indicator}
 	\end{minipage}
 	& Gibt an, ob ein Quiz aktiv ist. \\
@@ -271,6 +271,28 @@ Ist einer der Dienste aktiv, dann ist der Hintergrund des Statusindikators grau,
 	\label{fig:presenter-indicator-active}
 \end{minipage}
 
+
+\subsection{Folienvorschau}
+In diesem Bereich werden Miniaturbilder für die einzelnen Folien angezeigt. Die nächste Folie ist oben sichtbar. Um eine Folie auszuwählen, klicken Sie auf das jeweilige Miniaturbild. Beim Folienwechsel passt sich die Folienvorschau automatisch an und zeigt die nächsten Folien beginnend mit der darauffolgenden Folie von oben nach unten an. Sie haben auch die Möglichkeit das Dokument durchzublättern, indem Sie die Bildlaufleiste verwenden, um sich vorwärts und rückwärts durch das Dokument zu bewegen. Der blaue Rahmen um das Miniaturbild kennzeichnet die Folie, die gerade angezeigt wird.
+
+
+\subsection{Text-Tabs}
+Alle Text-Tabs sind umschaltbar, d.h. durch einen Klick auf das jeweilige Tab wird die dazugehörige Bedienoberfläche angezeigt oder versteckt.
+
+\begin{longtable}{p{1cm}p{12cm}}
+	\begin{minipage}{.05\textwidth}
+		\includegraphics[width=\linewidth]{presenter/notes}
+	\end{minipage}
+	& Notizen: Zeigt im Dokument eingebettete Notizen zu der aktuellen Folie an. \\
+	\begin{minipage}{.05\textwidth}
+		\includegraphics[width=\linewidth]{presenter/latex-tool}
+	\end{minipage}
+	& LaTeX: Zeigt das Eingabefeld zum LaTeX-Werkzeug an. \\
+	\begin{minipage}{.05\textwidth}
+		\includegraphics[width=\linewidth]{presenter/messenger-indicator}
+	\end{minipage}
+	& Nachricht: Zeigt die zuletzt eingehende Nachricht an, die über den Web-Dienst übermittelt wurde.
+\end{longtable}
 
 \section{Anwendungsszenarien}
 \label{section:presenter-use-cases}
@@ -324,46 +346,6 @@ Um ein Lesezeichen zu löschen, gibt es mehrere Möglichkeiten:
 	\includegraphics[width=8cm]{presenter/bookmark-set_de}
 	\captionof{figure}{Lesezeichenliste}
   	\label{fig:bookmark-set}
-\end{minipage}
-
-
-\subsection{IP-Adresse einrichten und herausfinden}
-\label{section:get-ip}
-\lectPresenter{} stellt verschiedene Netzwerkdienste bereit. Es handelt sich hierbei, um interaktive Feedback-Dienste wie Quizze und Textnachrichten, als auch, das Streaming der Vorlesung. Um auf diese Dienste zuzugreifen, wird die IP-Adresse des Servers benötigt. Es werden zwei Arten von Servern unterstützt; der eingebettete- und der dedizierte Server. Je nach Serverart, finden Sie die IP-Adresse des Servers wie im Folgenden beschrieben.
-
-\paragraph{Eingebetteter Server}
-\begin{itemize}
-	\item Menüpunkt \menu[,]{Bearbeiten, Einstellungen}
-	\item Tab Netzwerk auswählen
-	\item In der Bedienoberfläche (\autoref{fig:get-ip}) wählen Sie den Tab \quote{Netzwerk} aus.
-	\item Wählen Sie anschließend den Netzwerkadapter [1] aus, über den die Netzwerkdienste öffentlich gemacht werden.
-	\item Die IP-Adresse ist nun im Feld \quote{IPv4 Adresse} [2] zu finden.
-\end{itemize}
-
-\par
-\begin{minipage}{0.9\textwidth}
-	\centering
-	\captionsetup{type=figure}
-	\includegraphics[width=8cm]{presenter/get-ip_de}
-	\captionof{figure}{IP-Adresse des eingebetteten Servers}
-  	\label{fig:get-ip}
-\end{minipage}
-
-\paragraph{Dedizierter Server}
-\begin{itemize}
-	\item Menüpunkt \menu[,]{Bearbeiten, Einstellungen}
-	\item Tab Live Stream auswählen
-	\item In der Bedienoberfläche (\autoref{fig:get-ip-broadcast}) wählen Sie den Tab \quote{Live-Stream} aus.
-	\item Die IP-Adresse ist nun im Feld \quote{Broadcast Adresse} [1] und die Portnummer im Feld \quote{Port} [2] zu finden.
-\end{itemize}
-
-\par
-\begin{minipage}{0.9\textwidth}
-	\centering
-	\captionsetup{type=figure}
-	\includegraphics[width=8cm]{presenter/get-ip-broadcast_de}
-	\captionof{figure}{IP-Adresse des dedizierten Servers}
-  	\label{fig:get-ip-broadcast}
 \end{minipage}
 
 
@@ -456,39 +438,13 @@ Alle eingegangenen Web-Nachrichten werden im Ordner \inlinecode{app/AppData/Pres
 \end{info}
 
 
-\section{Client-Server-Architektur}
-Für interaktive Feedback-Funktionen wie Quizze \ref{section:create-quiz} und Web-Nachrichten \ref{section:web-messages} als auch Echtzeit-Streaming stellt \lectPresenter{} integrierte Server bereit (\autoref{fig:presenter-client-server}). Jeder Server kommuniziert mit den Zuhörer-Clients mittels HTTP\footnote{Hypertext Transfer Protocol}, d.h. die Zuhörer können über einen Browser auf die Feedback- und Streaming-Dienste von \lectPresenter{} zugreifen.
-\\\\
-\begin{minipage}{\textwidth}
-	\centering
-	\captionsetup{type=figure}
-	\includegraphics[width=0.45\textwidth]{presenter/client-server-arch}
-	\captionof{figure}{Client-Server-Architektur}
-  	\label{fig:presenter-client-server}
-\end{minipage}
-\\\\
-Wird zum Beispiel ein Quiz erstellt, dann startet Quiz-Server automatisch. Sobald Sie das Quiz beenden, fährt auch der Quiz-Server herunter und das Quiz ist nicht mehr zugänglich. Das gleiche gilt auch für die anderen Server.
-
-Damit die Zuhörer an Quizzen teilnehmen und ihnen Nachrichten senden können, wird ein Web-Server von \lectPresenter{} ausgeführt, der die Web-Seite dafür bereitstellt. Hierzu müssen ihre Zuhörer in einen Browser die IP-Adresse von ihrem Rechner eingeben, auf dem \lectPresenter{} ausgeführt wird. Wie Sie die IP-Adresse herausfinden ist in \autoref{section:get-ip} beschrieben.
-
-\subsubsection*{\underline{Wichtig}}
-Bevor Sie die Netzwerkdienste nutzen, überprüfen Sie den IP-Filter. Sollten die Zuhörer sich in einem Netzwerk befinden, zu dem es keinen Eintrag im IP-Filter in \lectPresenter{} gibt, dann werden die Zuhörer keinen Zugriff auf die Dienste bekommen.
-
-Die IP-Filter-Einträge erreichen Sie mit den folgenden Schritten:
-\begin{enumerate}
-	\item Aktivieren Sie \quote{Erweiterte Einstellungen} über das Menü \menu[,]{Ansicht, Erweiterte Einstellungen}, sofern Sie das noch nicht getan haben.
-	\item Öffnen Sie die Vortragseinstellungen über das Menü \menu[,]{Bearbeiten, Einstellungen}.
-	\item Wählen Sie den Tab \quote{Netzwerk} aus.
-	\item Ändern oder fügen Sie einen IP-Adressbereich hinzu, der zu ihrem Netzwerk passt.
-\end{enumerate}
-
 \section{Menüs}
 \subsection{Datei}
 \begin{itemize}
 \item \menu[,]{Öffnen}\\Öffnet den Dateiauswahldialog, über den eine Präsentation im PDF Format geladen werden kann.
 \item \menu[,]{Schließen}\\Schließt die aktuell ausgewählte Datei (Auswahl über die Tabs am rechten Bildschirmrand).
-\item \menu[,]{Dokumente abspeichern}\\Öffnet den Speicherdialog, über den die Folien mitsamt aller Annotationen gespeichert werden können.
-\item \menu[,]{Quizergebnisse abspeichern}\\Öffnet den \quote{Quizergebnisse abspeichern}-Dialog.
+\item \menu[,]{Dokumente abspeichern}\\Öffnet den Speicherdialog, über den alle geöffneten Dokumente (PDF, Whiteboard und Quizze) mitsamt aller Annotationen getrennt oder zusammen gespeichert werden können.
+\item \menu[,]{Quizergebnisse abspeichern}\\Öffnet den Speicherdialog, um Quizergebnisse in Form von PDF-Diagrammen und Tabellen im CSV-Format zu speichern.
 \item \menu[,]{Zuletzt geöffnete Dateien}\\Öffnet eine Liste der bis zu 5 zuletzt geöffneten Dokumente.
 \item \menu[,]{Beenden}\\Beendet das Programm.
 \end{itemize}
@@ -500,12 +456,12 @@ Die IP-Filter-Einträge erreichen Sie mit den folgenden Schritten:
 \begin{itemize}
 \item \menu[,]{Vollbild}\\Wechselt zwischen Fenster- und Vollbildmodus.
 \item \menu[,]{Erweiterte Einstellungen}\\Aktiviert oder deaktiviert die Anzeige zusätzlicher Optionen in den Einstellungen.
+\end{itemize}
 \subsection{Whiteboard}
 \begin{itemize}
 \item \menu[,]{Whiteboard erstellen}\\Öffnet ein neues, leeres Whiteboard, das als Zeichenfläche genutzt werden kann.
 \item \menu[,]{Whiteboardseite erstellen}\\Fügt dem aktuell geöffneten Whiteboard eine neue Seite hinzu.
 \item \menu[,]{Whiteboardseite löschen}\\Löscht die aktuelle Seite des aktuellen Whiteboards.
-\end{itemize}
 \item \menu[,]{Gitternetz ein/ausschalten}\\Zeigt und versteckt das Gitternetz auf dem aktuellen Whiteboard.
 \end{itemize}
 \subsection{Vortrag}
