@@ -1,0 +1,24 @@
+include::locale/attributes-de.adoc[]
+
+= Anleitung zu lectureStreaming
+:toc:
+:toclevels: 3
+:Author: Das lectureStudio-Team
+:revnumber: 1.0
+:revdate: {localdate}
+:imagesdir: ./images
+:xrefstyle: short
+:lang: de
+:icons: font
+:linkcss:
+:copycss:
+:nofooter:
+:homepage: https://lecturestudio.dek.e-technik.tu-darmstadt.de
+:experimental:
+
+include::copyright.adoc[]
+include::changelog.adoc[]
+include::intro.adoc[]
+include::login.adoc[]
+include::participants.adoc[]
+include::lecturers.adoc[]

@@ -1,0 +1,115 @@
+== Dozenten/innen
+
+=== Kurs anbieten
+
+Um einen Kurs mit lecturePresenter streamen zu können, müssen Sie einen Kurs erstellt haben. Es können auch mehrere Kurse erstellt werden, wenn Sie mehrere Lehrveranstaltungen anbieten. Des Weiteren muss ein Zugriffstoken generiert werden, der Ihre lecturePresenter-Instanz gegenüber dem Streamingdienst authentifiziert. Wie Sie das bewältigen wird im Folgenden erklärt.
+
+==== Kurs erstellen
+
+Ein Kurs kann in wenigen Schritten erstellt werden.
+
+. Klicken Sie in der Navigationsleiste auf btn:[Kurs hinzufügen].
+. Füllen Sie die Felder mit ihren kursspezifischen Inhalten aus.
+. Anschließend klicken Sie auf btn:[Erstellen].
+
+==== Zugriffstoken
+
+Das Zugriffstoken wird benötigt, um lecturePresenter gegenüber dem Streamingdienst zu authentifizieren. Es handelt sich hierbei um eine zufällig generierte Folge von alphanumerischen Zeichen. Einen Zugriffstoken zu verwenden hat den Vorteil, dass Sie sich im Werkzeug lecturePresenter nicht mit Ihren Logindaten (TU-ID und Passwort) einloggen müssen und somit auf sichere Weise geschützte Web-Dienste nutzen können. Das Zugriffstoken verwalten Sie mit folgenden Schritten.
+
+. Klicken Sie in der Navigationsleiste auf btn:[Persönliches Zugriffstoken].
+. Um ein neues Zugriffstoken zu generieren, klicken Sie auf btn:[Neues Token erzeugen].
+. Sie bekommen Ihr neues persönliches Zugriffstoken angezeigt. Bitte kopieren Sie dieses Token, denn es wird Ihnen nicht nochmal angezeigt.
++
+TIP: Haben Sie das Zugriffstoken verloren, gelöscht oder haben Bedenken hinsichtlich der Verwendung, dann können Sie sich jederzeit ein neues Zugriffstoken generieren. Dabei wird das alte Zugriffstoken gelöscht und mit dem neuen überschrieben.
+. Starten Sie lecturePresenter und öffnen die Einstellungen über das Menü menu:Bearbeiten[Einstellungen].
++
+NOTE: Gehen Sie sicher, dass erweiterte Einstellungen aktiviert sind: Menü menu:Ansicht[Erweiterte Einstellungen]
+. Navigieren Sie in den Stream-Tab.
+. Das Zugriffstoken in das Textfeld unter `Zugriffstoken` einfügen.
++
+TIP: Um zu überprüfen, ob das Zugriffstoken funktioniert, klicken Sie auf den Button btn:[Prüfen]. Gehen Sie hierbei auch sicher, dass Sie eine Internetverbindung haben. Wurde das Zugriffstoken akzeptiert, so nimmt das Textfeld die Farbe Grün an.
+. Sie können die Einstellungen wieder mit dem Button btn:[Schließen] verlassen und sind nun bereit einen Stream zu starten.
+
+Wenn Sie Bedenken hinsichtlich der Verwendung des Zugriffstokens haben, können Sie das Zugriffstoken löschen.
+
+
+==== Stream starten
+
+Sofern Sie einen Kurs und Zugriffstoken auf der Webseite erstellt haben, können Sie mit dem Streamen loslegen. In lecturePresenter haben Sie zwei Möglichkeiten einen Stream zu starten.
+
+. Über das Menü menu:Vortrag[Stream starten].
+. Über die Werkzeugleiste mit dem Button image:icons/stream.svg[,25,pdfwidth=22px].
++
+Sobald Sie einen Stream starten, wird zunächst ein Dialog wie in <<stream-start>> gezeigt.
++
+[#stream-start]
+.Stream starten
+image::stream-start.png[width=30%,pdfwidth=40%,align=center]
+
+. In der Auswahlliste werden alle von Ihnen erstellten Kurse aufgelistet. Wählen Sie hier den Kurs aus, der zu Ihrem aktuellen Vortrag passt.
+. Sie haben hier noch die Wahl, ob Sie den Kurs mit eingeschaltetem Mikrofon oder eingeschalteter Kamera beginnen möchten.
++
+Falls Sie den Empfang von unidirektionalen Textnachrichten für den Kurs einschalten möchten, dann aktivieren Sie die Option `Messenger`.
++
+NOTE: All diese Funktionen lassen sich auch während des laufenden Streams ein- und ausschalten.
+
+. Um den Stream zu beginnen, klicken Sie auf btn:[Start].
+
+
+=== Statusindikatoren
+
+lecturePresenter hat in der rechten oberen Ecke der Oberfläche Indikatoren für den aktuellen Status des Streamings integriert (<<stream-indicators>>).
+
+[#stream-indicators]
+.Stream-Indikatoren
+image::stream-indicators.png[width=15%,pdfwidth=17%,align=center]
+
+[horizontal]
+image:icons/messenger-indicator.svg[,25]:: Zeigt an, ob Textnachrichten aktiviert sind. Daneben wird die Anzahl unbearbeiteter Nachrichten angezeigt. Textnachrichten werden im Abschnitt <<messages>> näher beschrieben.
+image:icons/hand.svg[,25]:: Zeigt die Anzahl offener Meldungen an. Die Abwicklung wird im Abschnitt <<speeches>> näher beschrieben.
+image:icons/stream.svg[,25]:: Zeigt an, ob ein Stream läuft und wie viele Teilnehmende sich den Stream anschauen.
+
+
+
+[#messages]
+=== Empfang von Nachrichten
+
+Textnachrichten können empfangen werden, wenn die Funktion `Messenger` aktiviert wurde. Empfangene Nachrichten sind in lecturePresenter unter der Folienanzeige zu sehen (<<presenter-messages>>). Eine Textnachricht enthält den Vor- und Nachnamen des/der Verfassenden, die Uhrzeit und den Text der Nachricht selbst.
+
+[#presenter-messages]
+.Empfangene Nachrichten in lecturePresenter
+image::presenter-messages.png[width=42%,pdfwidth=50%,align=center]
+
+Während eines Vortrags mit sehr vielen Teilnehmenden kann es vorkommen, dass Sie eine große Anzahl von Nachrichten bekommen. Wenn Sie auf eine Nachricht eingegangen sind oder eine Nachricht für unwichtig halten, dann kann diese mit dem Button btn:[Bearbeitet] entfernt werden.
+
+
+
+[#speeches]
+=== Meldungen
+
+Meldungen sehen Sie dort, wo auch Textnachrichten in lecturePresenter angezeigt werden, unter der Folienanzeige (<<presenter-speeches>>). Eine Meldung enthält den Vor- und Nachnamen des/der Meldenden und die Uhrzeit. Sie können eine Meldung annehmen oder ablehnen. In beiden Fällen wird die Meldung entfernt.
+
+[#presenter-speeches]
+.Meldungen in lecturePresenter
+image::presenter-speech-request.png[width=42%,pdfwidth=50%,align=center]
+
+Haben Sie eine Meldung angenommen und der/die Meldende hat den Redebeitrag gestartet, dann sehen Sie in lecturePresenter rechts oben über der Folienvorschau den Namen und das Kamerabild, falls aktiviert, des/der Meldenden sowie Steuerelemente für den Redebeitrag. Zu diesem Zeitpunkt ist auch der/die Meldende für Sie und alle Teilnehmer/innen zu hören.
+
+[#presenter-speeche]
+.Laufender Redebeitrag in lecturePresenter
+image::presenter-speech.png[width=42%,pdfwidth=50%,align=center]
+
+Audio und Video des Redebeitrags können Sie steuern.
+
+[horizontal]
+image:icons/microphone.svg[25,25]:: Schaltet den Ton des/der Meldenden für Sie und alle Teilnehmer/innen stumm. Durch erneutes Betätigen kann der Ton wieder eingeschaltet werden.
+image:icons/camera.svg[25,25]:: Schaltet das Kamerabild des/der Meldenden für Sie und alle Teilnehmer/innen stumm. Durch erneutes Betätigen kann das Kamerabild wieder eingeschaltet werden.
++
+NOTE: Wurde die Nutzung der Kamera auf Seite des/der Meldenden deaktiviert, dann hat diese Funktion keine Wirkung.
+
+Der Redebeitrag wird beendet durch:
+
+* Klicken auf btn:[Stop] in der Steuerleiste.
+* Meldende selbst.
+
+<<<

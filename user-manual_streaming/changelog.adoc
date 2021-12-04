@@ -1,0 +1,12 @@
+== Historie
+
+[frame=ends, grid=none, cols="1,2,6"]
+|===
+| Version | Datum | Bemerkung
+
+| 1.0
+| 14. Oktober 2021
+| Dokumenterstellung
+|===
+
+<<<

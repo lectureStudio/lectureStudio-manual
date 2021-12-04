@@ -1,0 +1,24 @@
+== Login
+
+Der Login erfolgt beim Hochschulrechenzentrum (HRZ) der Technischen Universität
+Darmstadt über eine zentrale Web-Authentisierung per Single Sign-On (SSO). Jede/r Angehörige der TU Darmstadt hat eine TU-ID und ein Passwort, die den Zugang zu allen am SSO-System angeschlossenen Diensten ermöglicht. Das lectureStreaming ist an das SSO-System angebunden. Sobald Sie sich einmal am Single Sign-On-Server angemeldet haben, findet innerhalb einer Browser-Session keine weitere Authentifizierung statt. Ihr Passwort wird durch die zentrale Login-Seite geschützt, denn an angeschlossene Dienste werden die Login-Daten (Passwort) nicht weitergeleitet.
+
+Um Kurse anzubieten oder an Kursen teilzunehmen, müssen Sie sich einloggen. Der Loginvorgang wird nachfolgend beschrieben.
+
+. Klicken Sie auf der Startseite auf den Button btn:[Einloggen]. Sie werden auf die zentrale Loginseite der TU Darmstadt weitergeleitet (<<login-1>>). Geben Sie dort Ihre TU-ID und Passwort ein.
++
+[#login-1]
+.Zentrale Loginseite der TU Darmstadt
+image::login-1.png[width=400,align=center]
+
+. Melden Sie sich das erste Mal an, so werden Sie nach der Informationsweitergabe gefragt (<<login-2>>). Die als `notwendig` markierten Attribute können nicht abgewählt werden, da diese für die Funktion der Webseite und die Teilnahme an Kursen erforderlich sind. Alle anderen Attribute sind optional und können abgewählt werden. Aktivierte optionale Attribute werden nicht weiter verarbeitet.
++
+[#login-2]
+.Informationsweitergabe
+image::login-2.png[width=600,align=center]
++
+Stimmen Sie der Informationsweitergabe zu, so klicken Sie auf den Button btn:[Akzeptieren]. Sie werden auf die Seite mit allen verfügbaren Kursen weitergeleitet.
+
+NOTE: Klicken Sie auf btn:[Ablehnen], dann ist das Anmelden auf der Webseite nicht möglich. Als Dozent/in können Sie keine Kurse anbieten. Als Teilnehmer/in können Sie an Kursen nicht teilnehmen.
+
+<<<

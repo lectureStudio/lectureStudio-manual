@@ -1,0 +1,152 @@
+== Teilnehmer/innen
+
+Teilnehmer/innen können keine Kurse anbieten. Sie nehmen passiv an Kursen teil, können aber auch ggf. aktiv mit Dozenten/innen interagieren, wenn Interaktionsfunktionen aktiviert wurden. Sie können andere Teilnehmer/innen in der Kursgruppe nicht beeinträchtigen. Im Folgenden wird gezeigt, wie Sie an Kursen teilnehmen.
+
+[IMPORTANT]
+====
+Um gestreamte Kurse ansehen zu können, müssen Sie Netzzugang zum Datennetz der TU Darmstadt haben. Alle TU-Angehörigen haben folgende Optionen zum Netzzugang:
+
+* link:https://www.hrz.tu-darmstadt.de/services/it_services/wlan/index.de.jsp[WLAN (eduroam)]: Nahezu flächendeckender Internetzugang am Campus und im Kongresszentrum „darmstadtium“.
+* link:https://www.hrz.tu-darmstadt.de/support_und_anleitungen/hrz_anleitungen/tu_vpn/windows__macos_x_und_linux/index.de.jsp[TU VPN]: Sichere Verbindung ins TU-Netz und Zugang zu Services außerhalb des TU Datennetzes.
+====
+
+=== Hauptseite
+
+Im aktuellen Entwicklungsstand ist die Seite (<<courses>>) schlicht gehalten. Diese besteht im Wesentlichen aus zwei Bereichen, der Navigationsleiste und dem Bereich für den Inhalt des jeweils angesteuerten Links aus der Navigationsleiste.
+
+Als Teilnehmer/in können Sie:
+
+. Alle angebotenen Kurse sehen
+. An einem Kurs teilnehmen
+. Einstellungen vornehmen
+
+[#courses]
+.Hauptseite aus Sicht der Teilnehmer/innen
+image::courses.png[width=600,pdfwidth=65%,align=center]
+
+Zu jedem Kurs werden Indikator-Icons angezeigt, je nachdem wie sich der aktuelle Status des Kurses ändert.
+
+[horizontal]
+image:icons/live.svg[,25]:: Der Kurs hat begonnen und wird übertragen.
+image:icons/messenger.svg[,25]:: Textnachrichten sind für den Kurs aktiviert.
+
+
+=== Am Kurs teilnehmen
+
+Um an einem Kurs teilzunehmen, klicken Sie in der Kursliste auf diesen Kurs. Je nach Zustand des Kurses, ob der Kurs begonnen hat oder nicht, bekommen Sie entweder den Kurs samt Medien oder eine Meldung über den nicht verfügbaren Kurs angezeigt.
+
+==== Nicht begonnene Kurse
+
+Wenn Sie wissen, dass bald ein Kurs losgeht, dann können Sie auch diesen Kurs auswählen und bekommen dann automatisch den Kurs angezeigt, sobald dieser von Dozenten/innen gestartet wurde. Sie bekommen zunächst die Meldung in <<course-not-available>> angezeigt.
+
+[#course-not-available]
+.Kurs nicht verfügbar
+image::course_not_available.png[width=50%,pdfwidth=50%,align=center]
+
+
+==== Oberfläche
+
+Eine Übersicht über die Oberfläche eines laufenden Kurses ist in <<course>> gegeben. Die Oberfläche besteht aus drei Bereichen: Dem Präsentationsbereich für Folien samt Annotationen und Steuerelementen für die Medien, der Medienleiste rechts für die eingeschalteten Webcams sowie einem Eingabefeld für Textnachrichten und dem Bereich für die Beschreibung des Kurses ganz unten.
+
+[#course]
+.Bedienüberfläche für einen Kurs
+image::course.png[width=70%,pdfwidth=68%,align=center]
+
+. Der Präsentationsbereich füllt den freien Platz in der Oberfläche. Hier werden die präsentierten Folien gezeigt.
+. Die Steuerleiste enthält Bedienelemente für den laufenden Kurs.
++
+[horizontal]
+image:icons/volume.svg[,25]:: Audio-Wiedergabe stumm schalten. Mit dem Regler daneben kann die Lautstärke der Wiedergabe angepasst werden.
+image:icons/hand.svg[,25]:: Hiermit können Sie sich melden. Diese Funktion wird in Abschnitt <<speech>> näher beschrieben.
+image:icons/gear.svg[,25]:: Einstellungen für Mikrofon und Kamera vornehmen.
+image:icons/fullscreen.svg[,25]:: In den Vollbildmodus wechseln.
+
+. Zeigt das Kamerabild von Dozierenden. Das Bild ist nur zu sehen, wenn das Kamerabild tatsächlich übertragen wird. Bei ausgeschalteter Kamera wird dieses Element ausgeblendet.
+. Zeigt das Kamerabild von Teilnehmenden während eines Redebeitrags. Das Bild ist nur zu sehen, wenn der/die Teilnehmende die Kamera für den Redebeitrag aktiviert hat.
++
+Teilnehmende, die den Redebeitrag führen, sehen hier ihr lokales Kamerabild.
+. Mit dem Eingabefeld für Textnachrichten können Sie Dozierenden Textnachrichten senden. Alle anderen Teilnehmer/innen können Ihre Nachricht nicht sehen. Dieses Eingabefeld ist nur sichtbar, wenn Dozierende diese Funktion aktiviert haben.
+. Hier ist die ausführliche Beschreibung des Kurses zu sehen.
+
+
+==== Automatische Wiedergabe von Medien
+Browser können die automatische Wiedergabe von Audio und Video blockieren. In diesem Fall können Sie zwar die Folien sehen, aber den Ton sowie das Kamerabild von Dozierenden nicht hören bzw. sehen. Hierbei ist eine Interaktion mit dem Browser erforderlich.
+
+Es ist ein zusätzlicher Button image:icons/play.svg[, 22] in der Steuerleiste zu sehen (<<interactive-play>>). Klicken Sie auf image:icons/play.svg[, 22], um die Wiedergabe von Audio und Video des Dozierenden zu aktivieren.
+
+[#interactive-play]
+.Interaktion mit dem Browser für Wiedergabe von Medien
+image::interactive-play.png[width=10%,pdfwidth=10%,align=center]
+
+===== Firefox
+
+In Firefox kann eine Berechtigung für die automatische Wiedergabe von Medien erteilt werden. Navigieren Sie hierzu in die Adresszeile des Browsers und erteilen die Erlaubnis, siehe <<firefox-auto-playback>>.
+
+[#firefox-auto-playback]
+.Firefox: Berechtigung für Medienwiedergabe
+image::firefox-media.png[width=40%,pdfwidth=40%,align=center]
+
+
+
+==== Textnachrichten
+
+Mit den Textnachrichten können Sie Fragen stellen, ohne Dozenten/innen in ihrem Vortrag zu unterbrechen. Navigieren Sie dazu in das Nachrichtenfeld [5], geben dann Ihre Frage ein und klicken auf btn:[Senden].
+
+IMPORTANT: Bei Veranstaltungen mit vielen Teilnehmern kann der Chat schnell unübersichtlich werden. Hier ist Disziplin von allen Teilnehmern gefragt. Nutzen Sie die Textnachrichten daher nur nach Aufforderung der Dozenten/innen oder gemäß den für die Veranstaltung geltenden Kommunikationsregeln.
+
+
+[#speech]
+==== Sich melden
+
+Als Teilnehmer/in können Sie sich zu Wort melden. Die folgenden Schritte erläutern den Ablauf eines Redebeitrags.
+
+. Klicken Sie in der Steuerleiste auf den Button image:icons/hand.svg[, 25,pdfwidth=22px].
+
+. Wenn Sie sich zum ersten Mal für einen Redebeitrag melden, werden Sie aufgefordert, Ihrem Browser die Erlaubnis zur Verwendung des Mikrofons und optional der Kamera zu erteilen. Sie bekommen zunächst den Dialog in <<speech-1>> angezeigt.
++
+[#speech-1]
+.Geräteeinstellungen für Redebeitrag
+image::speech-1.png[width=45%,pdfwidth=50%,align=center]
++
+Falls Sie Ihre Kamera für den Redebeitrag einschalten möchten, dann aktivieren Sie die Option dafür im Dialog. Anschließend klicken Sie auf btn:[Weiter].
++
+Sie können Ihre Meldung auch btn:[Abbrechen].
+
+. Der Browser zeigt Ihnen einen Dialog, der nach der Kamera- und Mikrofonberechtigung fragt (<<speech-2>>). Hier stehen alle verfügbaren Kameras und Mikrofone zur Auswahl.
++
+[#speech-2]
+.Kamera- und Mikrofonberechtigungen für Browser
+image::speech-2.png[width=35%,pdfwidth=40%,align=center]
++
+Wählen Sie das Mikrofon, und sofern zuvor aktiviert, die Kamera aus, die Sie für den Redebeitrag verwenden möchten. Klicken Sie dann auf btn:[Erlauben].
+
+. Ihre Meldung wurde erfolgreich an den/die Dozenten/in gesendet. Dozierende entscheiden, wann und ob sie die Meldung annehmen.
+
+. Wurde Ihre Meldung angenommen, so werden Sie nochmal gefragt, ob der Redebeitrag nun beginnen kann (<<speech-3>>).
++
+[#speech-3]
+.Redebeitrag bestätigen
+image::speech-3.png[width=45%,pdfwidth=50%,align=center]
++
+Falls Sie es sich anders überlegt haben und die Meldung zurückziehen möchten, dann klicken Sie auf btn:[Abbrechen].
++
+Um den Redebeitrag zu beginnen, klicken Sie auf btn:[Starten].
+
+. Sie können jetzt sprechen. Dozierende und alle Teilnehmer/innen können Sie hören und sehen, wenn die Kamera aktiviert wurde.
+
+. Den Redebeitrag beenden Sie durch erneutes Betätigen des Buttons image:icons/hand.svg[, 25,pdfwidth=22px].
+
+=== Einstellungen
+
+Unter Einstellungen können Sie im aktuellen Entwicklungsstand nur Geräteeinstellungen vornehmen (<<device-settings>>). Diese Einstellungen können Sie zum Beispiel nutzen, wenn Sie sich das erste Mal angemeldet haben und die <<speech, Meldefunktion>> nutzen möchten. So können Kamera und Mikrofon vorab konfiguriert werden.
+
+Haben Sie zuvor der Nutzung der Kamera zugestimmt und möchten diese nicht mehr aktiviert haben, so können Sie hier die Nutzung der Kamera deaktivieren, ohne in die Browsereinstellungen zu wechseln. Wählen Sie hierzu in der Kameraauswahl `Keine` aus.
+
+[#device-settings]
+.Geräteeinstellungen
+image::device-settings.png[width=45%,pdfwidth=50%,align=center]
+
+. Hier ist das Kamerabild der ausgewählten Kamera zu sehen.
+. Zeigt den sich verändernden Eingangs-Pegel des ausgewählten Mikrofons an. Hiermit können Sie die Mikrofon-Lautstärke überprüfen.
+
+<<<

@@ -1,0 +1,22 @@
+== Einführung
+
+lectureStreaming ist eine webbasierte Anwendung, mit der Sie an Echtzeit-basierten Kursen teilnehmen können. Sie müssen keine weitere Software installieren, da die Anwendung in Ihrem Browser läuft. lectureStreaming hebt sich von anderen Streamingplattformen ab, indem die präsentierten Folien samt Annotationen nicht als Bilder übermittelt werden, sondern die Folien als PDF und Annotationen als Vektorgrafiken. Damit wird eine bandbreitenschonende Übermittlung (Streaming) von Kursen erreicht.
+
+== Technische Anforderungen
+
+=== Browser
+lectureStreaming bietet Audio und Video in hoher Qualität unter Verwendung der in den Browser integrierten Unterstützung für WebRTC (Web Real Time Communication). WebRTC ist ein Standard, der von allen gängigen Browsern wie Chrome, Firefox, Safari und Safari Mobile unterstützt wird. Standardmäßig ist WebRTC im Browser aktiviert. Es kann jedoch vorkommen, dass Sie diese Funktion un-/absichtlich deaktiviert haben.
+
+Sie können den Browser Ihrer Wahl auf WebRTC-Funktionalität testen unter: https://test.webrtc.org[https://test.webrtc.org, window="_blank"]
+
+=== Netzwerkverbindung
+
+Der stabilste Internetzugang wird über ein LAN-Kabel bereitgestellt, aber auch WLAN funktioniert in der Regel. Ihre Internetverbindung sollte die folgenden Kriterien erfüllen: Mindestens 0.4 MBit/s Download- und 0.1 MBit/s Upload-Rate. Möchten Sie sich mit einer Kamera melden und sprechen, so wird eine Upload-Rate von mindestens 0.3 MBit/s vorausgesetzt.
+
+=== Mikrofon und Kamera
+
+Wenn Sie während eines Kurses sich melden und sprechen möchten, benötigen Sie ein Mikrofon, bzw. ein Headset. Wir empfehlen nicht die Verwendung externer Lautsprecher oder Mikrofone, die in Ihren Computer/Endgerät eingebaut sind. Diese können zu störenden Rückkopplungsgeräuschen und unerwünschten Hintergrundgeräuschen führen.
+
+Wenn Sie während Ihres Redebeitrags in einem Kurs von anderen Teilnehmern gesehen werden sollen, benötigen Sie zusätzlich eine Kamera (Webcam). In diesem Fall ist in der Regel die in Ihrem Computer oder Endgerät eingebaute Kamera ausreichend.
+
+<<<
