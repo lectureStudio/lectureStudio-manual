@@ -235,7 +235,49 @@ Sobald Sie ein PDF-Dokument oder ein Whiteboard geöffnet haben, finden Sie die 
 		\includegraphics[width=\linewidth]{presenter/record-stop-tool}
 	\end{minipage}
 	& Aufnahme beenden. \\
+	27 &
+	\begin{minipage}{.06\textwidth}
+		\includegraphics[width=\linewidth]{presenter/prev-slide-tool}
+	\end{minipage}
+	& Vorherige Folie anzeigen. \\
+	28 &
+	\begin{minipage}{.06\textwidth}
+		\includegraphics[width=\linewidth]{presenter/next-slide-tool}
+	\end{minipage}
+	& Nächste Folie anzeigen. \\
+	29 &
+	\begin{minipage}{.06\textwidth}
+		\includegraphics[width=\linewidth]{presenter/start-quiz}
+	\end{minipage}
+	& Quiz auswählen und stellen. \\
+	30 &
+	\begin{minipage}{.06\textwidth}
+		\includegraphics[width=\linewidth]{presenter/start-stream}
+	\end{minipage}
+	& Stream starten. \\
+	31 &
+	\begin{minipage}{.06\textwidth}
+		\includegraphics[width=\linewidth]{presenter/microphone}
+	\end{minipage}
+	& Mikrofon für Stream ein/ausschalten. \\
+	32 &
+	\begin{minipage}{.06\textwidth}
+		\includegraphics[width=\linewidth]{presenter/camera}
+	\end{minipage}
+	& Kamera für Stream ein/ausschalten. \\
 \end{longtable}
+
+\subsection{Werkzeugleiste anpassen}
+
+Die Werkzeugleiste lässt sich Ihren Bedürfnissen nach anpassen. So können Sie zum Beispiel nur die Werkzeuge in der Leiste anzeigen lassen, die Sie tatsächlich brauchen und nutzen. Für eine bessere Übersicht und Struktur können drei verschiedene Abstandshalter zwischen den Werkzeug-Buttons eingefügt werden: Ein vertikaler und schmaler Abstandshalter, ein etwas breiter Abstandshalter mit fester Breite und ein dynamischer Abstandshalter, der den leeren Raum in der Leiste einnimmt und so die Buttons in die Ecken der Werkzeugleiste verschiebt.
+
+Die Benutzeroberfläche zur Anpassung der Werkzeugleiste ist in \autoref{fig:presenter-toolbar-config} zu sehen. Die einzelnen Buttons können aus dem Dialog in die Werkzeugleiste gezogen und an die gewünschte Position hinzugefügt werden. Um die Buttons aus der Werkzeugleiste zu entfernen, ziehen Sie den jeweiligen Button aus der Werkzeugleiste heraus und legen diesen irgendwo im Fenster ab.
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{presenter/toolbar-config}
+	\caption{Werkzeugleiste anpassen}
+	\label{fig:presenter-toolbar-config}
+\end{figure}
 
 \subsection{Statusindikatoren}
 Die dargestellten Anzeigeelemente, von links nach rechts:\\
@@ -280,18 +322,18 @@ In diesem Bereich werden Miniaturbilder für die einzelnen Folien angezeigt. Die
 Alle Text-Tabs sind umschaltbar, d.h. durch einen Klick auf das jeweilige Tab wird die dazugehörige Bedienoberfläche angezeigt oder versteckt.
 
 \begin{longtable}{p{1cm}p{12cm}}
-	\begin{minipage}{.05\textwidth}
-		\includegraphics[width=\linewidth]{presenter/notes}
-	\end{minipage}
-	& Notizen: Zeigt im Dokument eingebettete Notizen zu der aktuellen Folie an. \\
-	\begin{minipage}{.05\textwidth}
-		\includegraphics[width=\linewidth]{presenter/latex-tool}
-	\end{minipage}
-	& LaTeX: Zeigt das Eingabefeld zum LaTeX-Werkzeug an. \\
+%	\begin{minipage}{.05\textwidth}
+%		\includegraphics[width=\linewidth]{presenter/notes}
+%	\end{minipage}
+%	& Notizen: Zeigt im Dokument eingebettete Notizen zu der aktuellen Folie an. \\
+%	\begin{minipage}{.05\textwidth}
+%		\includegraphics[width=\linewidth]{presenter/latex-tool}
+%	\end{minipage}
+%	& LaTeX: Zeigt das Eingabefeld zum LaTeX-Werkzeug an. \\
 	\begin{minipage}{.05\textwidth}
 		\includegraphics[width=\linewidth]{presenter/messenger-indicator}
 	\end{minipage}
-	& Nachricht: Zeigt die zuletzt eingehende Nachricht an, die über den Web-Dienst übermittelt wurde.
+	& Nachricht: Zeigt eingehende Nachrichten und Meldungen des laufenden Kurses an.
 \end{longtable}
 
 \section{Anwendungsszenarien}
@@ -454,8 +496,9 @@ Alle eingegangenen Web-Nachrichten werden im Ordner \inlinecode{app/AppData/Pres
 \end{itemize}
 \subsection{Ansicht}
 \begin{itemize}
+\item \menu[,]{Inhaltsverzeichnis}\\Aktiviert oder deaktiviert das Inhaltsverzeichnis zum geöffneten PDF-Dokument.
 \item \menu[,]{Vollbild}\\Wechselt zwischen Fenster- und Vollbildmodus.
-\item \menu[,]{Erweiterte Einstellungen}\\Aktiviert oder deaktiviert die Anzeige zusätzlicher Optionen in den Einstellungen.
+\item \menu[,]{Toolbar anpassen}\\Zeigt einen Dialog zum Anpassen der Toolbar mittels Ziehen und Ablegen der Buttons an.
 \end{itemize}
 \subsection{Whiteboard}
 \begin{itemize}
@@ -468,14 +511,13 @@ Alle eingegangenen Web-Nachrichten werden im Ordner \inlinecode{app/AppData/Pres
 \begin{itemize}
 \item \menu[,]{Aufzeichnung starten}\\Startet die Aufzeichnung von Audio- und Zeichen-Events. Der Menüeintrag wechselt dann zu \menu[,]{Aufzeichnung pausieren}.
 \item \menu[,]{Aufzeichnung stoppen}\\Beendet die Aufnahme und öffnet den \quote{Aufnahme speichern}-Dialog.
-\item \menu[,]{Live-Stream starten}\\ Startet den Dienst für eine Echtzeit-Übertragung des Vortrags.
-\item \menu[,]{Live-Stream stoppen}\\ Beendet die Echtzeit-Übertragung.
-\item \menu[,]{Messenger starten}\\ Startet den Dienst für Web-Nachrichten.
-\item \menu[,]{Messenger stoppen}\\ Beendet den Dienst für Web-Nachrichten.
-\item \menu[,]{Messenger anzeigen}\\ Öffnet/schließt das Fenster, indem alle Web-Nachrichten angezeigt werden.
+\item \menu[,]{Stream starten/stoppen}\\ Startet oder Beendet den Dienst für eine Echtzeit-Übertragung des Vortrags.
+\item \menu[,]{Mikrofon für Stream ein/ausschalten}\\ Schaltet das Mikrofon für den laufenden Stream ein bzw. schaltet es stumm.
+\item \menu[,]{Kamera für Stream ein/ausschalten}\\ Schaltet die Kamera für den laufenden Stream ein oder aus.
+\item \menu[,]{Messenger starten/stoppen}\\ Startet oder Beendet den Dienst für Web-Nachrichten.
 \item \menu[,]{Quiz auswählen}\\ Öffnet ein Dialog, in dem gespeicherte Quize aufgelistet sind.
 \item \menu[,]{Quiz erstellen}\\ Öffnet ein Dialog, in dem Sie ein neues Quiz erstellen können.
-\item \menu[,]{Quiz schließen}\\ Schließt das aktuelle Quiz.
+\item \menu[,]{Quiz beenden}\\ Beendet das aktuelle Quiz.
 \end{itemize}
 \vfill
 
