@@ -33,6 +33,7 @@ TIP: Um zu überprüfen, ob das Zugriffstoken funktioniert, klicken Sie auf den 
 Wenn Sie Bedenken hinsichtlich der Verwendung des Zugriffstokens haben, können Sie das Zugriffstoken löschen.
 
 
+[#stream-start]
 ==== Stream starten
 
 Sofern Sie einen Kurs und Zugriffstoken auf der Webseite erstellt haben, können Sie mit dem Streamen loslegen. In lecturePresenter haben Sie zwei Möglichkeiten einen Stream zu starten.
@@ -40,14 +41,15 @@ Sofern Sie einen Kurs und Zugriffstoken auf der Webseite erstellt haben, können
 . Über das Menü menu:Vortrag[Stream starten].
 . Über die Werkzeugleiste mit dem Button image:icons/stream.svg[,25,pdfwidth=22px].
 +
-Sobald Sie einen Stream starten, wird zunächst ein Dialog wie in <<stream-start>> gezeigt.
+Sobald Sie einen Stream starten, wird zunächst ein Dialog wie in <<stream-start-image>> gezeigt.
 +
-[#stream-start]
+[#stream-start-image]
 .Stream starten
-image::stream-start.png[width=30%,pdfwidth=40%,align=center]
+image::stream-start.png[width=60%,pdfwidth=60%,align=center]
 
 . In der Auswahlliste werden alle von Ihnen erstellten Kurse aufgelistet. Wählen Sie hier den Kurs aus, der zu Ihrem aktuellen Vortrag passt.
-. Sie haben hier noch die Wahl, ob Sie den Kurs mit eingeschaltetem Mikrofon oder eingeschalteter Kamera beginnen möchten.
+. Sie haben hier noch die Möglichkeit die richtigen Ein- und Ausgabegeräte einzustellen und diese zu testen. Zudem haben Sie die Wahl, ob Sie den Kurs mit eingeschaltetem Mikrofon oder eingeschalteter Kamera beginnen möchten.
+. Die Einstellung des Lautsprechers ist nur dann relevant, wenn Sie Redebeiträge annehmen. Das Audio von Redebeiträgen wird dann auf dem ausgewählten Lautsprecher wiedergegeben.
 +
 Falls Sie den Empfang von unidirektionalen Textnachrichten für den Kurs einschalten möchten, dann aktivieren Sie die Option `Messenger`.
 +
@@ -62,13 +64,63 @@ lecturePresenter hat in der rechten oberen Ecke der Oberfläche Indikatoren für
 
 [#stream-indicators]
 .Stream-Indikatoren
-image::stream-indicators.png[width=15%,pdfwidth=17%,align=center]
+image::stream-indicators.png[width=17%,pdfwidth=21%,align=center]
 
 [horizontal]
+image:icons/quiz-indicator.svg[,25]:: Zeigt an, ob ein Quiz aktiv ist. Daneben wird die Anzahl der Antworten angezeigt. Ein Teilnehmer kann nur einmal am aktiven Quiz teilnehmen.
 image:icons/messenger-indicator.svg[,25]:: Zeigt an, ob Textnachrichten aktiviert sind. Daneben wird die Anzahl unbearbeiteter Nachrichten angezeigt. Textnachrichten werden im Abschnitt <<messages>> näher beschrieben.
 image:icons/hand.svg[,25]:: Zeigt die Anzahl offener Meldungen an. Die Abwicklung wird im Abschnitt <<speeches>> näher beschrieben.
 image:icons/stream.svg[,25]:: Zeigt an, ob ein Stream läuft und wie viele Teilnehmende sich den Stream anschauen.
 
+
+
+[#quizzes]
+=== Quizze
+
+==== Quiz erstellen
+lecturePresenter erlaubt es Ihnen, während der Vorlesung in Echtzeit Quizze zu starten, an denen die Teilnehmer über einen Browser teilnehmen können. Um ein Quiz zu erstellen, müssen Sie dieses zunächst anlegen. Wählen Sie dazu den Menüpunkt Vortrag Quiz erstellen. Es öffnet sich eine Bedienoberfläche (<<quiz-create>>), über die Sie das Quiz erstellen.
+
+[#quiz-create]
+.Quiz erstellen
+image::create-quiz.png[width=60%,pdfwidth=60%,align=center]
+
+Geben Sie eine Quizfrage ein [1]. Verschiedene Formatierungsmöglichkeiten sind in der Werkzeugleiste [2] zu finden. Die Quizfrage wird mit HTML formatiert. Auf diese Weise wird die Frage in allen Browsern mit der gleichen Formatierung angezeigt.
+
+Wählen Sie den Quizstil [3] aus. Es stehen drei Stile zur Verfügung; `Multiple choice` (Mehrfachauswahl), `Eine Antwort` und `Numerisch`.
+
+===== Multiple Choice und Eine Antwort
+Die Antwortmöglichkeiten werden im Feld [4] als Text eingegeben. Neue Antwortmöglichkeiten erstellen Sie mit dem Button [5] oder mit der Taste Tab . Um eine Antwort zu löschen, klicken Sie den Button image:icons/delete.svg[,25,pdfwidth=22px] [6]. Mit den aufwärts und abwärts Buttons [7] können Sie die Reihenfolge der Antworten verändern.
+
+===== Numerische Antworten
+Für Fragen vom Stil `Numerisch` können Sie einen oder mehrere Einträge hinzufügen. Jede Antwortmöglichkeit (<<quiz-create-numeric>>) besitzt eine Beschreibung [1] und ein erlaubtes Werteintervall in Form von Min- und Max-Feldern[2][3], für die Eingabe bei der Teilnahme am Quiz. Numerische Antworten lassen sich ebenfalls sortieren und entfernen, wie im vorherigen Abschnitt beschrieben.
+
+[#quiz-create-numeric]
+.Numerische Quizantwort
+image::create-quiz-numeric.png[width=60%,pdfwidth=60%,align=center]
+
+Nachdem Sie alles Gewünschte eingegeben haben, haben Sie die Möglichkeit das Quiz zu speichern, bevor Sie das Quiz freigeben. Zum Speichern drücken Sie den Button btn:[Quiz speichern]. Um das Quiz freizugeben, klicken Sie btn:[Quiz stellen].
+
+Sobald das Quiz erfolgreich freigegeben wurde, öffnet sich ein neues Dokument mit dem Namen `Quiz` und das Quiz ist jetzt für die Teilnehmer über einen Browser zugänglich. Das Quiz-Dokument wird in Echtzeit aktualisiert während die Antworten eintreffen. Um die Quizergebnisse anzuzeigen, wechseln sie auf die nächste Folie des Quiz-Dokuments.
+
+==== Quiz aus der Quizsammlung auswählen
+
+Um den Teilnehmern eine ihrer angelegten Fragen aus ihrer Quizsammlung zu stellen, wählen Sie den Menüpunkt menu:Vortrag[Quiz auswählen]. Es öffnet sich die Fragenliste, in der Sie bestehende Fragen bearbeiten, löschen oder stellen können. Wählen Sie die gewünschte Frage aus und klicken btn:[Quiz stellen].
+
+[#quiz-select]
+.Quiz auswählen
+image::select-quiz.png[width=60%,pdfwidth=60%,align=center]
+
+==== Quiz-Modi
+
+Ein Quiz kann mit oder ohne einen laufenden Stream gestellt werden. Wird ein Quiz ohne einen gerade laufenden Stream gestellt, so wird das Quiz anstelle des Streams auf der Webseite angezeigt. Ein aktives Quiz kann auf zwei Wegen beendet werden: Durch den Menüpunkt menu:Vortrag[Quiz beenden] oder den Button btn:[Beenden] unter den Vorschaufolien.
+
+Stellen Sie ein Quiz während der Stream zum Vortrag läuft, so sehen Sie unter den Vorschaufolien einen zusätzlichen Button btn:[Teilen]. Dieser Button ist dafür da, um die Quizergebnisse mit den Teilnehmern zu teilen. Denn die Teilnehmer können die Ergebnisse so lange nicht sehen, bis diese geteilt wurden. Die Ergebnisse können auch nur dann geteilt werden, wenn Sie das Quiz beenden.
+
+Quizergebnisse können Sie mit folgenden Schritten den Teilnehmern präsentieren:
+
+1. Das Quiz z.B. mit dem Button btn:[Beenden] stoppen.
+2. Mit dem Button btn:[Teilen] die Ergebnisse an die Teilnehmer freigeben.
+3. Die Folien mit Diagrammen, die alle Antworten zusammenfassen, auswählen und präsentieren.
 
 
 [#messages]

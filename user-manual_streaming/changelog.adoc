@@ -4,6 +4,11 @@
 |===
 | Version | Datum | Bemerkung
 
+| 2.0
+| 17. Januar 2022
+| „<<stream-start, Stream starten>>“ aktualisiert und Abschnitte „<<quiz-paticipate, Am Quiz teilnehmen>>“ und „<<quizzes, Quizze>>“ eingeführt.
+
+Neue <<chromium-audio, Einstellung>>: Auswahl eines Audio-Ausgabegeräts unter Chromium-basierten Browsern.
 | 1.0
 | 14. Oktober 2021
 | Dokumenterstellung

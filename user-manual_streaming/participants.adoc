@@ -29,6 +29,7 @@ Zu jedem Kurs werden Indikator-Icons angezeigt, je nachdem wie sich der aktuelle
 [horizontal]
 image:icons/live.svg[,25]:: Der Kurs hat begonnen und wird übertragen.
 image:icons/messenger.svg[,25]:: Textnachrichten sind für den Kurs aktiviert.
+image:icons/quiz-button.svg[,25]:: Ein Quiz wurde gestellt.
 
 
 === Am Kurs teilnehmen
@@ -58,6 +59,7 @@ image::course.png[width=70%,pdfwidth=68%,align=center]
 [horizontal]
 image:icons/volume.svg[,25]:: Audio-Wiedergabe stumm schalten. Mit dem Regler daneben kann die Lautstärke der Wiedergabe angepasst werden.
 image:icons/hand.svg[,25]:: Hiermit können Sie sich melden. Diese Funktion wird in Abschnitt <<speech>> näher beschrieben.
+image:icons/quiz-button.svg[,25]:: Ein Quiz ist aktiv und kann durch einen Klick auf diesen Button angezeigt werden.
 image:icons/gear.svg[,25]:: Einstellungen für Mikrofon und Kamera vornehmen.
 image:icons/fullscreen.svg[,25]:: In den Vollbildmodus wechseln.
 
@@ -93,6 +95,24 @@ image::firefox-media.png[width=40%,pdfwidth=40%,align=center]
 Mit den Textnachrichten können Sie Fragen stellen, ohne Dozenten/innen in ihrem Vortrag zu unterbrechen. Navigieren Sie dazu in das Nachrichtenfeld [5], geben dann Ihre Frage ein und klicken auf btn:[Senden].
 
 IMPORTANT: Bei Veranstaltungen mit vielen Teilnehmern kann der Chat schnell unübersichtlich werden. Hier ist Disziplin von allen Teilnehmern gefragt. Nutzen Sie die Textnachrichten daher nur nach Aufforderung der Dozenten/innen oder gemäß den für die Veranstaltung geltenden Kommunikationsregeln.
+
+
+[#quiz-paticipate]
+==== Am Quiz teilnehmen
+
+Ein Quiz kann mit oder ohne einen laufenden Stream zum Kurs gestellt werden. Wird ein Quiz ohne einen gerade laufenden Stream gestellt, so wird das Quiz anstelle des Streams auf der Webseite angezeigt. Wenn ein Stream zum Kurs läuft, und ein Quiz gestellt wird, dann bekommen Sie einen zusätzlichen Button image:icons/quiz-button.svg[, 22] in der Steuerleiste zu sehen (<<quiz-button>>). Klicken Sie auf diesen Button, um das Quiz zu öffnen.
+
+[#quiz-button]
+.Quiz öffnen
+image::open-quiz.png[width=14%,pdfwidth=18%,align=center]
+
+Die Oberfläche eines Quiz ist in <<quiz>> zu sehen.
+
+[#quiz]
+.Quizoberfläche
+image::quiz.png[width=45%,pdfwidth=50%,align=center]
+
+Wählen Sie die Antwortmöglichkeiten aus und klicken auf btn:[Senden], um die Antwort einzureichen.
 
 
 [#speech]
@@ -136,15 +156,18 @@ Um den Redebeitrag zu beginnen, klicken Sie auf btn:[Starten].
 
 . Den Redebeitrag beenden Sie durch erneutes Betätigen des Buttons image:icons/hand.svg[, 25,pdfwidth=22px].
 
+[#settings]
 === Einstellungen
 
 Unter Einstellungen können Sie im aktuellen Entwicklungsstand nur Geräteeinstellungen vornehmen (<<device-settings>>). Diese Einstellungen können Sie zum Beispiel nutzen, wenn Sie sich das erste Mal angemeldet haben und die <<speech, Meldefunktion>> nutzen möchten. So können Kamera und Mikrofon vorab konfiguriert werden.
 
 Haben Sie zuvor der Nutzung der Kamera zugestimmt und möchten diese nicht mehr aktiviert haben, so können Sie hier die Nutzung der Kamera deaktivieren, ohne in die Browsereinstellungen zu wechseln. Wählen Sie hierzu in der Kameraauswahl `Keine` aus.
+[#chromium-audio]
+In Chromium-basierten Browsern (z.B. Google Chrome, Opera, Microsoft Edge,...) kann das Audio-Ausgabegerät eingestellt werden. Browser wie z.B. Firefox unterstützen diese Einstellungsmöglichkeit noch nicht.
 
 [#device-settings]
 .Geräteeinstellungen
-image::device-settings.png[width=45%,pdfwidth=50%,align=center]
+image::device-settings.png[width=50%,pdfwidth=55%,align=center]
 
 . Hier ist das Kamerabild der ausgewählten Kamera zu sehen.
 . Zeigt den sich verändernden Eingangs-Pegel des ausgewählten Mikrofons an. Hiermit können Sie die Mikrofon-Lautstärke überprüfen.
