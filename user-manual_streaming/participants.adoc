@@ -10,15 +10,16 @@ Um gestreamte Kurse ansehen zu können, müssen Sie Netzzugang zum Datennetz der
 * link:https://www.hrz.tu-darmstadt.de/support_und_anleitungen/hrz_anleitungen/tu_vpn/windows__macos_x_und_linux/index.de.jsp[TU VPN]: Sichere Verbindung ins TU-Netz und Zugang zu Services außerhalb des TU Datennetzes.
 ====
 
+[#main-page]
 === Hauptseite
 
 Im aktuellen Entwicklungsstand ist die Seite (<<courses>>) schlicht gehalten. Diese besteht im Wesentlichen aus zwei Bereichen, der Navigationsleiste und dem Bereich für den Inhalt des jeweils angesteuerten Links aus der Navigationsleiste.
 
 Als Teilnehmer/in können Sie:
 
-. Alle angebotenen Kurse sehen
-. An einem Kurs teilnehmen
-. Einstellungen vornehmen
+. Alle angebotenen Kurse sehen.
+. An einem Kurs teilnehmen.
+. Einstellungen vornehmen.
 
 [#courses]
 .Hauptseite aus Sicht der Teilnehmer/innen
@@ -60,6 +61,7 @@ image::course.png[width=70%,pdfwidth=68%,align=center]
 image:icons/volume.svg[,25]:: Audio-Wiedergabe stumm schalten. Mit dem Regler daneben kann die Lautstärke der Wiedergabe angepasst werden.
 image:icons/hand.svg[,25]:: Hiermit können Sie sich melden. Diese Funktion wird in Abschnitt <<speech>> näher beschrieben.
 image:icons/quiz-button.svg[,25]:: Ein Quiz ist aktiv und kann durch einen Klick auf diesen Button angezeigt werden.
+image:icons/chat.svg[,25]:: Chateingabe ein-/ausblenden.
 image:icons/gear.svg[,25]:: Einstellungen für Mikrofon und Kamera vornehmen.
 image:icons/fullscreen.svg[,25]:: In den Vollbildmodus wechseln.
 
@@ -68,17 +70,16 @@ image:icons/fullscreen.svg[,25]:: In den Vollbildmodus wechseln.
 +
 Teilnehmende, die den Redebeitrag führen, sehen hier ihr lokales Kamerabild.
 . Mit dem Eingabefeld für Textnachrichten können Sie Dozierenden Textnachrichten senden. Alle anderen Teilnehmer/innen können Ihre Nachricht nicht sehen. Dieses Eingabefeld ist nur sichtbar, wenn Dozierende diese Funktion aktiviert haben.
-. Hier ist die ausführliche Beschreibung des Kurses zu sehen.
 
 
 ==== Automatische Wiedergabe von Medien
-Browser können die automatische Wiedergabe von Audio und Video blockieren. In diesem Fall können Sie zwar die Folien sehen, aber den Ton sowie das Kamerabild von Dozierenden nicht hören bzw. sehen. Hierbei ist eine Interaktion mit dem Browser erforderlich.
+Browser (insbesondere Chromium-basierte Browser) können die automatische Wiedergabe von Audio und Video blockieren. In diesem Fall können Sie zwar die Folien sehen, aber den Ton sowie das Kamerabild von Dozierenden nicht hören bzw. sehen. Hierbei ist eine Interaktion mit dem Browser erforderlich.
 
-Es ist ein zusätzlicher Button image:icons/play.svg[, 22] in der Steuerleiste zu sehen (<<interactive-play>>). Klicken Sie auf image:icons/play.svg[, 22], um die Wiedergabe von Audio und Video des Dozierenden zu aktivieren.
+In diesem Fall wird ein Dialog (<<interactive-play>>) angezeigt, um die Wiedergabe von Audio und Video des Dozierenden zu aktivieren.
 
 [#interactive-play]
 .Interaktion mit dem Browser für Wiedergabe von Medien
-image::interactive-play.png[width=10%,pdfwidth=10%,align=center]
+image::interactive-play.png[width=50%,pdfwidth=48%,align=center]
 
 ===== Firefox
 
@@ -104,13 +105,13 @@ Ein Quiz kann mit oder ohne einen laufenden Stream zum Kurs gestellt werden. Wir
 
 [#quiz-button]
 .Quiz öffnen
-image::open-quiz.png[width=14%,pdfwidth=18%,align=center]
+image::open-quiz.png[width=7%,pdfwidth=10%,align=center]
 
-Die Oberfläche eines Quiz ist in <<quiz>> zu sehen.
+Die Oberfläche eines Quiz ist in <<quiz>> zu sehen. Es handelt sich hierbei um ein Beispiel.
 
 [#quiz]
 .Quizoberfläche
-image::quiz.png[width=45%,pdfwidth=50%,align=center]
+image::quiz.png[width=45%,pdfwidth=52%,align=center]
 
 Wählen Sie die Antwortmöglichkeiten aus und klicken auf btn:[Senden], um die Antwort einzureichen.
 
@@ -122,23 +123,23 @@ Als Teilnehmer/in können Sie sich zu Wort melden. Die folgenden Schritte erläu
 
 . Klicken Sie in der Steuerleiste auf den Button image:icons/hand.svg[, 25,pdfwidth=22px].
 
-. Wenn Sie sich zum ersten Mal für einen Redebeitrag melden, werden Sie aufgefordert, Ihrem Browser die Erlaubnis zur Verwendung des Mikrofons und optional der Kamera zu erteilen. Sie bekommen zunächst den Dialog in <<speech-1>> angezeigt.
+. Wenn Sie sich zum ersten Mal für einen Redebeitrag melden, werden Sie aufgefordert, Ihrem Browser die Erlaubnis zur Verwendung des Mikrofons und optional der Kamera zu erteilen. Der Browser zeigt Ihnen einen Dialog, der nach der Kamera- und Mikrofonberechtigung fragt (<<speech-1>>). Hier stehen alle verfügbaren Kameras und Mikrofone zur Auswahl.
 +
 [#speech-1]
-.Geräteeinstellungen für Redebeitrag
-image::speech-1.png[width=45%,pdfwidth=50%,align=center]
-+
-Falls Sie Ihre Kamera für den Redebeitrag einschalten möchten, dann aktivieren Sie die Option dafür im Dialog. Anschließend klicken Sie auf btn:[Weiter].
-+
-Sie können Ihre Meldung auch btn:[Abbrechen].
-
-. Der Browser zeigt Ihnen einen Dialog, der nach der Kamera- und Mikrofonberechtigung fragt (<<speech-2>>). Hier stehen alle verfügbaren Kameras und Mikrofone zur Auswahl.
-+
-[#speech-2]
 .Kamera- und Mikrofonberechtigungen für Browser
 image::speech-2.png[width=35%,pdfwidth=40%,align=center]
 +
-Wählen Sie das Mikrofon, und sofern zuvor aktiviert, die Kamera aus, die Sie für den Redebeitrag verwenden möchten. Klicken Sie dann auf btn:[Erlauben].
+Wählen Sie das Mikrofon und die Kamera aus, welche Sie für den Redebeitrag verwenden möchten. Klicken Sie dann auf btn:[Erlauben].
+
+. Anschließend bekommen Sie den Dialog für Geräteeinstellungen (<<speech-2>>) angezeigt. In diesem Dialog können Sie nochmal Ihr gewünschtes Eingabegerät auswählen und überprüfen, ob es richtig funktioniert.
++
+[#speech-2]
+.Geräteeinstellungen für Redebeitrag
+image::course-device-settings.png[width=45%,pdfwidth=50%,align=center]
++
+Anschließend klicken Sie auf btn:[Starten].
++
+Sie können Ihre Meldung auch btn:[Abbrechen].
 
 . Ihre Meldung wurde erfolgreich an den/die Dozenten/in gesendet. Dozierende entscheiden, wann und ob sie die Meldung annehmen.
 
@@ -159,7 +160,21 @@ Um den Redebeitrag zu beginnen, klicken Sie auf btn:[Starten].
 [#settings]
 === Einstellungen
 
-Unter Einstellungen können Sie im aktuellen Entwicklungsstand nur Geräteeinstellungen vornehmen (<<device-settings>>). Diese Einstellungen können Sie zum Beispiel nutzen, wenn Sie sich das erste Mal angemeldet haben und die <<speech, Meldefunktion>> nutzen möchten. So können Kamera und Mikrofon vorab konfiguriert werden.
+Unter Einstellungen können Sie im aktuellen Entwicklungsstand das Medienprofil auswählen und Geräteeinstellungen vornehmen.
+
+==== Medienprofil
+
+Das Medienprofil bietet zwei Optionen an. Je nach Auswahl, ändert sich die Benutzeroberfläche des besuchten Kurses.
+
+===== Zu Hause
+Die Oberfläche bietet alle zur Verfügung stehenden Funktionen wie Ansicht der präsentierten Folien, Wiedergabe von Ton und Kamerabild der vortragenden Person sowie Versenden von Nachrichten und Teilnahme an Umfragen an.
+
+===== Hörsaal
+Die Oberfläche erlaubt nur das Versenden von Nachrichten und die Teilnahme an Umfragen. Diese Option ist insbesondere dann zu aktivieren, wenn Sie den Vortrag in Präsenz im Hörsaal sehen.
+
+==== Geräteeinstellungen
+
+Diese Einstellungen (<<device-settings>>) können Sie zum Beispiel nutzen, wenn Sie sich das erste Mal angemeldet haben und die <<speech, Meldefunktion>> nutzen möchten. So können Kamera und Mikrofon vorab konfiguriert werden.
 
 Haben Sie zuvor der Nutzung der Kamera zugestimmt und möchten diese nicht mehr aktiviert haben, so können Sie hier die Nutzung der Kamera deaktivieren, ohne in die Browsereinstellungen zu wechseln. Wählen Sie hierzu in der Kameraauswahl `Keine` aus.
 [#chromium-audio]
@@ -170,6 +185,7 @@ In Chromium-basierten Browsern (z.B. Google Chrome, Opera, Microsoft Edge,...) k
 image::device-settings.png[width=50%,pdfwidth=55%,align=center]
 
 . Hier ist das Kamerabild der ausgewählten Kamera zu sehen.
+. Hier kann das ausgewählte Mikrofon durch eine kurze lokale Aufzeichnung getestet werden, indem Sie kurz reinsprechen und danach die Aufnahme wiedergeben. Auf diese Weise kann festgestellt werden, ob das Mikrofon richtig funktioniert und der Aufnahmepegel akzeptabel ist. 
 . Zeigt den sich verändernden Eingangs-Pegel des ausgewählten Mikrofons an. Hiermit können Sie die Mikrofon-Lautstärke überprüfen.
 
 <<<

@@ -16,14 +16,13 @@ Ein Kurs kann in wenigen Schritten erstellt werden.
 
 Das Zugriffstoken wird benötigt, um lecturePresenter gegenüber dem Streamingdienst zu authentifizieren. Es handelt sich hierbei um eine zufällig generierte Folge von alphanumerischen Zeichen. Einen Zugriffstoken zu verwenden hat den Vorteil, dass Sie sich im Werkzeug lecturePresenter nicht mit Ihren Logindaten (TU-ID und Passwort) einloggen müssen und somit auf sichere Weise geschützte Web-Dienste nutzen können. Das Zugriffstoken verwalten Sie mit folgenden Schritten.
 
-. Klicken Sie in der Navigationsleiste auf btn:[Persönliches Zugriffstoken].
+. Klicken Sie in der Navigationsleiste auf btn:[Einstellungen] und dann weiter auf btn:[Persönliches Zugriffstoken].
 . Um ein neues Zugriffstoken zu generieren, klicken Sie auf btn:[Neues Token erzeugen].
 . Sie bekommen Ihr neues persönliches Zugriffstoken angezeigt. Bitte kopieren Sie dieses Token, denn es wird Ihnen nicht nochmal angezeigt.
 +
 TIP: Haben Sie das Zugriffstoken verloren, gelöscht oder haben Bedenken hinsichtlich der Verwendung, dann können Sie sich jederzeit ein neues Zugriffstoken generieren. Dabei wird das alte Zugriffstoken gelöscht und mit dem neuen überschrieben.
 . Starten Sie lecturePresenter und öffnen die Einstellungen über das Menü menu:Bearbeiten[Einstellungen].
 +
-NOTE: Gehen Sie sicher, dass erweiterte Einstellungen aktiviert sind: Menü menu:Ansicht[Erweiterte Einstellungen]
 . Navigieren Sie in den Stream-Tab.
 . Das Zugriffstoken in das Textfeld unter `Zugriffstoken` einfügen.
 +
@@ -130,26 +129,26 @@ Textnachrichten können empfangen werden, wenn die Funktion `Messenger` aktivier
 
 [#presenter-messages]
 .Empfangene Nachrichten in lecturePresenter
-image::presenter-messages.png[width=42%,pdfwidth=50%,align=center]
+image::presenter-messages.png[width=45%,pdfwidth=50%,align=center]
 
-Während eines Vortrags mit sehr vielen Teilnehmenden kann es vorkommen, dass Sie eine große Anzahl von Nachrichten bekommen. Wenn Sie auf eine Nachricht eingegangen sind oder eine Nachricht für unwichtig halten, dann kann diese mit dem Button btn:[Bearbeitet] entfernt werden.
+Während eines Vortrags mit sehr vielen Teilnehmenden kann es vorkommen, dass Sie eine große Anzahl von Nachrichten bekommen. Wenn Sie auf eine Nachricht eingegangen sind oder eine Nachricht für unwichtig halten, dann kann diese mit dem Button image:icons/message-check.svg[,25,pdfwidth=22px] entfernt werden.
 
-
+Mit dem Button image:icons/message-slide.svg[,25,pdfwidth=22px] kann eine neue Folie mit dem Text der empfangenen Nachricht erstellt werden. Diese Folie wird in lecturePresenter sofort angezeigt, aufgezeichnet und im Stream verteilt, sofern Sie den Vortrag aufzeichnen bzw. streamen.
 
 [#speeches]
 === Meldungen
 
-Meldungen sehen Sie dort, wo auch Textnachrichten in lecturePresenter angezeigt werden, unter der Folienanzeige (<<presenter-speeches>>). Eine Meldung enthält den Vor- und Nachnamen des/der Meldenden und die Uhrzeit. Sie können eine Meldung annehmen oder ablehnen. In beiden Fällen wird die Meldung entfernt.
+Meldungen sehen Sie dort, wo auch Textnachrichten in lecturePresenter angezeigt werden, unter der Folienanzeige (<<presenter-speeches>>). Eine Meldung enthält den Vor- und Nachnamen des/der Meldenden und die Uhrzeit. Sie können eine Meldung annehmen image:icons/speech-accept.svg[,25,pdfwidth=22px] oder ablehnen image:icons/speech-decline.svg[,25,pdfwidth=22px]. In beiden Fällen wird die Meldung aus der Liste entfernt.
 
 [#presenter-speeches]
 .Meldungen in lecturePresenter
-image::presenter-speech-request.png[width=42%,pdfwidth=50%,align=center]
+image::presenter-speech-request.png[width=45%,pdfwidth=50%,align=center]
 
 Haben Sie eine Meldung angenommen und der/die Meldende hat den Redebeitrag gestartet, dann sehen Sie in lecturePresenter rechts oben über der Folienvorschau den Namen und das Kamerabild, falls aktiviert, des/der Meldenden sowie Steuerelemente für den Redebeitrag. Zu diesem Zeitpunkt ist auch der/die Meldende für Sie und alle Teilnehmer/innen zu hören.
 
-[#presenter-speeche]
+[#presenter-speech]
 .Laufender Redebeitrag in lecturePresenter
-image::presenter-speech.png[width=42%,pdfwidth=50%,align=center]
+image::presenter-speech.png[width=38%,pdfwidth=45%,align=center]
 
 Audio und Video des Redebeitrags können Sie steuern.
 
@@ -161,7 +160,7 @@ NOTE: Wurde die Nutzung der Kamera auf Seite des/der Meldenden deaktiviert, dann
 
 Der Redebeitrag wird beendet durch:
 
-* Klicken auf btn:[Stop] in der Steuerleiste.
+* Klicken auf btn:[Beenden] in der Steuerleiste.
 * Meldende selbst.
 
 <<<

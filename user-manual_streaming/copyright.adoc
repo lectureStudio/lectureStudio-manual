@@ -2,7 +2,7 @@
 
 :url-by-sa: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 
-Copyright © {docyear} {author}
+Copyright © {localyear} {author}
 
 image::by-sa.svg[]
 

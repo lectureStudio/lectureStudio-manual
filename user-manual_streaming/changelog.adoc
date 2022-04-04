@@ -4,6 +4,10 @@
 |===
 | Version | Datum | Bemerkung
 
+| 3.0
+| 4. April 2022
+| Screenshots für die neue Oberfläche der <<main-page, Webseite>> angepasst. Kleine Änderungen in der Oberfläche von lecturePresenter beim Verwalten von <<messages, Nachrichten>> und <<speeches, Meldungen>>.
+
 | 2.0
 | 17. Januar 2022
 | „<<stream-start, Stream starten>>“ aktualisiert und Abschnitte „<<quiz-paticipate, Am Quiz teilnehmen>>“ und „<<quizzes, Quizze>>“ eingeführt.

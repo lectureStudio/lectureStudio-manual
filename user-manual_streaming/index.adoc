@@ -4,7 +4,7 @@ include::locale/attributes-de.adoc[]
 :toc:
 :toclevels: 3
 :Author: Das lectureStudio-Team
-:revnumber: 1.0
+:revnumber: 3.0
 :revdate: {localdate}
 :imagesdir: ./images
 :xrefstyle: short
@@ -13,7 +13,7 @@ include::locale/attributes-de.adoc[]
 :linkcss:
 :copycss:
 :nofooter:
-:homepage: https://lecturestudio.dek.e-technik.tu-darmstadt.de
+:homepage: https://lect.stream
 :experimental:
 
 include::copyright.adoc[]
