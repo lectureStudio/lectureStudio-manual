@@ -7,7 +7,7 @@ lectureStreaming ist eine webbasierte Anwendung, mit der Sie an Echtzeit-basiert
 === Browser
 lectureStreaming bietet Audio und Video in hoher Qualität unter Verwendung der in den Browser integrierten Unterstützung für WebRTC (Web Real Time Communication). WebRTC ist ein Standard, der von allen gängigen Browsern wie Chrome, Firefox, Safari und Safari Mobile unterstützt wird. Standardmäßig ist WebRTC im Browser aktiviert. Es kann jedoch vorkommen, dass Sie diese Funktion un-/absichtlich deaktiviert haben.
 
-Sie können den Browser Ihrer Wahl auf WebRTC-Funktionalität testen unter: https://test.webrtc.org[https://test.webrtc.org, window="_blank"]
+Sie können den Browser Ihrer Wahl auf WebRTC-Funktionalität testen unter: https://test.8x8.vc[https://test.8x8.vc, window="_blank"]
 
 === Netzwerkverbindung
 

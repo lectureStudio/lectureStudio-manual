@@ -6,6 +6,8 @@ include::locale/attributes-de.adoc[]
 :Author: Das lectureStudio-Team
 :revnumber: 3.0
 :revdate: {localdate}
+:stylesdir: styles
+:stylesheet: custom.css
 :imagesdir: ./images
 :xrefstyle: short
 :lang: de
