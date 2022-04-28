@@ -4,7 +4,7 @@ include::locale/attributes-de.adoc[]
 :toc:
 :toclevels: 3
 :Author: Das lectureStudio-Team
-:revnumber: 3.0
+:revnumber: 1.3.0
 :revdate: {localdate}
 :stylesdir: styles
 :stylesheet: custom.css

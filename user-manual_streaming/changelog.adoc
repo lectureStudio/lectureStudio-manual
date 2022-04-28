@@ -4,16 +4,16 @@
 |===
 | Version | Datum | Bemerkung
 
-| 3.0
+| 1.3.0
 | 4. April 2022
 | Screenshots für die neue Oberfläche der <<main-page, Webseite>> angepasst. Kleine Änderungen in der Oberfläche von lecturePresenter beim Verwalten von <<messages, Nachrichten>> und <<speeches, Meldungen>>.
 
-| 2.0
+| 1.2.0
 | 17. Januar 2022
 | „<<stream-start, Stream starten>>“ aktualisiert und Abschnitte „<<quiz-paticipate, Am Quiz teilnehmen>>“ und „<<quizzes, Quizze>>“ eingeführt.
 
 Neue <<chromium-audio, Einstellung>>: Auswahl eines Audio-Ausgabegeräts unter Chromium-basierten Browsern.
-| 1.0
+| 1.0.0
 | 14. Oktober 2021
 | Dokumenterstellung
 |===
