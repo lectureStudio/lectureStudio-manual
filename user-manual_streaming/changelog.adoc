@@ -4,6 +4,10 @@
 |===
 | Version | Datum | Bemerkung
 
+| 1.4.0
+| 1. Oktober 2022
+| <<screen-share, Bildschirmfreigabe>> und <<course-roles, Kursrollen>> hinzugefügt.
+
 | 1.3.0
 | 4. April 2022
 | Screenshots für die neue Oberfläche der <<main-page, Webseite>> angepasst. Kleine Änderungen in der Oberfläche von lecturePresenter beim Verwalten von <<messages, Nachrichten>> und <<speeches, Meldungen>>.

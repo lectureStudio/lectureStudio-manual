@@ -1,10 +1,9 @@
 == Dozenten/innen
 
-=== Kurs anbieten
-
 Um einen Kurs mit lecturePresenter streamen zu können, müssen Sie einen Kurs erstellt haben. Es können auch mehrere Kurse erstellt werden, wenn Sie mehrere Lehrveranstaltungen anbieten. Des Weiteren muss ein Zugriffstoken generiert werden, der Ihre lecturePresenter-Instanz gegenüber dem Streamingdienst authentifiziert. Wie Sie das bewältigen wird im Folgenden erklärt.
 
-==== Kurs erstellen
+[#create-course]
+=== Kurs erstellen
 
 Ein Kurs kann in wenigen Schritten erstellt werden.
 
@@ -12,7 +11,62 @@ Ein Kurs kann in wenigen Schritten erstellt werden.
 . Füllen Sie die Felder mit ihren kursspezifischen Inhalten aus.
 . Anschließend klicken Sie auf btn:[Erstellen].
 
-==== Zugriffstoken
+[#course-roles]
+==== Kursrollen
+
+Für Kurse gibt es drei Rollen, nämlich Organisator:in, Co-Organisator:in und Teilnehmer:in. Die Rollen sind hierarchisch geordnet und können im Kurs dynamisch zugewiesen werden. Jede Rolle erfüllt spezielle Aufgaben und ist mit den entsprechenden Fähigkeiten verknüpft. Jeder Rolle können Privilegien zugewiesen und entzogen werden.
+
+TIP: Als Ersteller:in eines Kurses erhalten Sie automatisch alle existierenden Privilegien. Ihnen kann niemand Privilegien für Ihren eigenen Kurs nehmen.
+
+===== Organisator:in
+
+Organisator:innen verfügen über umfassende Privilegien. Diese können administrative Funktionen wie zum Beispiel die Teilnehmerverwaltung übernehmen. Zu den wichtigsten Privilegien dieser Rolle gehören zum Beispiel:
+
+* Einstellungen des Kurses ändern
+* Rollen und Privilegien von Teilnehmern ändern
+* Kurs löschen
+* Kurs streamen 
+
+===== Co-Organisator:in
+
+Co-Organisator:innen verfügen über eine Teilmenge der Privilegien von Organisator:innen. In der Regel nehmen Kursbetreuer diese Rolle ein. Diese können zum Beispiel selbst einen Vortrag für diesen Kurs streamen oder nehmen an dem Kurs teil und reagieren aktiv auf Chat-Nachrichten.
+
+===== Teilnehmer:in
+
+Die Rolle Teilnehmer:in besitzen alle Personen im Portal, sowohl Studierende als auch Lehrende und damit alle, die Ihren Kurs betreten. Weisen Sie hier die Privilegien so zu, um zu bestimmen, ob und wie Teilnehmende mit Ihnen und untereinander kommunizieren können. Zu den wichtigsten Privilegien dieser Rolle gehören beispielsweise:
+
+* Chat-Nachrichten lesen
+* Chat-Nachrichten an alle Teilnehmer:innen senden
+* Chat-Nachrichten an (Co)-Organisator:innen senden
+* Chat-Nachrichten an bestimmte Teilnehmer:innen senden
+* Teilnehmer:innen des Kurses sehen
+* An Quizzen teilnehmen
+* Redebeitrag durch Melden starten 
+
+[TIP]
+====
+*Unidirektionale Kommunikation für Teilnehmende*
+
+Falls Sie möchten, dass Teilnehmende nur Ihnen und Co-Organisator:innen Chat-Nachrichten senden und an Quizzen teilnehmen können, so weisen Sie die Privilegien wie in <<participants-unidirektional>> dargestellt zu.
+
+[#participants-unidirektional]
+.Privilegien für unidirektionale Kommunikation
+image::participants-unidirektional.png[width=50%,pdfwidth=50%,align=center]
+====
+
+===== Zusätzliche Kursrollen zuweisen
+
+Sie können einzelnen Teilnehmenden zusätzliche Kursrollen zuweisen, um die Privilegien dieser Person zu erhöhen. Verwenden Sie dazu die in <<course-roles-assign>> dargestellte Eingabemaske.
+
+1. In das Feld _Benutzername_ geben Sie die TU-ID des/der Angehörigen der TU Darmstadt ein.
+2. Die zusätzliche Kursrolle auswählen. Momentan kann _Organisator:in_ oder _Co-Organisator:in_ ausgewählt werden.
+3. Klicken Sie auf btn:[Hinzufügen].
+
+[#course-roles-assign]
+.Zusätzliche Kursrollen zuweisen
+image::course-role-assign.png[width=50%,pdfwidth=50%,align=center]
+
+=== Zugriffstoken
 
 Das Zugriffstoken wird benötigt, um lecturePresenter gegenüber dem Streamingdienst zu authentifizieren. Es handelt sich hierbei um eine zufällig generierte Folge von alphanumerischen Zeichen. Einen Zugriffstoken zu verwenden hat den Vorteil, dass Sie sich im Werkzeug lecturePresenter nicht mit Ihren Logindaten (TU-ID und Passwort) einloggen müssen und somit auf sichere Weise geschützte Web-Dienste nutzen können. Das Zugriffstoken verwalten Sie mit folgenden Schritten.
 
@@ -118,8 +172,7 @@ Stellen Sie ein Quiz während der Stream zum Vortrag läuft, so sehen Sie unter 
 Quizergebnisse können Sie mit folgenden Schritten den Teilnehmern präsentieren:
 
 1. Das Quiz z.B. mit dem Button btn:[Beenden] stoppen.
-2. Mit dem Button btn:[Teilen] die Ergebnisse an die Teilnehmer freigeben.
-3. Die Folien mit Diagrammen, die alle Antworten zusammenfassen, auswählen und präsentieren.
+2. Die Folien mit Diagrammen, die alle Antworten zusammenfassen, auswählen und präsentieren.
 
 
 [#messages]
@@ -162,5 +215,43 @@ Der Redebeitrag wird beendet durch:
 
 * Klicken auf btn:[Beenden] in der Steuerleiste.
 * Meldende selbst.
+
+[#screen-share]
+=== Bildschirmfreigabe
+
+Mit lecturePresenter können Sie Ihren Bildschirm für andere Teilnehmer/innen teilen. Sie können Ihren gesamten Bildschirm oder nur bestimmte Fenster und Programme freigeben. Das ermöglicht Ihnen beispielsweise, eine Werkzeug-Demo vorzuführen. Hierfür gehen Sie wie folgt vor:
+
+1. Starten Sie einen Stream, wie in Abschnitt <<stream-start>> beschrieben.
+2. Klicken Sie in der Werkzeugleiste auf image:icons/screen-share.svg[,25,pdfwidth=22px].
+3. Ihnen wird der Dialog für die Bildschirmfreigabe angezeigt. Ein beispielhafter Dialog ist in <<screen-share-select>> zu sehen.
++
+[#screen-share-select]
+.Dialog für Bildschirmfreigabe
+image::screen-share-1.png[width=50%,pdfwidth=50%,align=center]
+
+4. Einen Bildschirm oder ein Fenster für die Freigabe auswählen und btn:[Start] klicken.
+5. Ein neues Dokument wird erstellt und geöffnet. Auf der ersten Folie des Dokuments wird ein Schnappschuss des freizugebenden Bildschirminhalts angezeigt (<<screen-share-doc>>). Dieses Dokument wird gleichzeitig an alle Teilnehmer/innen verteilt und bei allen Teilnehmenden angezeigt. Sie können in diesem Dokument auch alle Annotationswerkzeuge nutzen.
++
+[#screen-share-doc]
+.Schnappschuss der Bildschirmfreigabe im neuen Dokument
+image::screen-share-2.png[width=50%,pdfwidth=50%,align=center]
++
+NOTE: Zu diesem Zeitpunkt hat die Bildschirmfreigabe noch nicht begonnen!
+
+6. Die Bildschirmfreigabe beginnen Sie, indem Sie auf image:icons/record-tool.svg[,25,pdfwidth=22px] [1] klicken. Falls ein Fenster freigegeben wurde, wird dieses automatisch fokusiert und bei Ihnen auf dem Bildschirm in den Vordergrund gebracht.
+7. Alle Teilnehmer/innen bekommen den freigegebenen Bildschirminhalt in Form von gestreamten Video angezeigt (<<screen-share-stream>>).
++
+[#screen-share-stream]
+.Anzeige der Bildschirmfreigabe bei Teilnehmenden
+image::screen-share-3.png[width=50%,pdfwidth=50%,align=center]
+
+==== Bildschirmfreigabe pausieren
+Die Bildschirmfreigabe lässt sich pausieren. Dies ist insbesondere dann hilfreich, wenn Sie einen Schnappschuss des freigegebenen Bildschirminhalts machen möchten, um den aktuellen Zustand der Freigabe auf einer Folie festzuhalten.
+
+1. Hierfür klicken Sie auf image:icons/record-pause-tool.svg[,25,pdfwidth=22px] [1].
+2. Eine neue Folie wird mit einem neuen Schnappschuss des freigegebenen Bildschirminhalts im Dokument erstellt und ausgewählt. Diese neue Folie wird an alle Teilnehmenden verteilt und bei allen angezeigt.
+
+==== Bildschirmfreigabe beenden
+Um die Bildschirmfreigabe zu beenden, klicken Sie auf image:icons/record-stop-tool.svg[,25,pdfwidth=22px] [2]. Das dazu erstellte Dokument wird geschlossen.
 
 <<<
