@@ -4,9 +4,13 @@
 |===
 | Version | Datum | Bemerkung
 
+| 1.4.1
+| 21. Oktober 2022
+| Kapitel <<lecturePresenter, lecturePresenter>> eingeführt und dazugehörige Abschnitte zusammengeführt. Kapitel <<lectureEditor, lectureEditor>> neu hinzugefügt.
+
 | 1.4.0
 | 1. Oktober 2022
-| <<screen-share, Bildschirmfreigabe>> und <<course-roles, Kursrollen>> hinzugefügt.
+| Abschnitte <<screen-share, Bildschirmfreigabe>> und <<course-roles, Kursrollen>> hinzugefügt.
 
 | 1.3.0
 | 4. April 2022

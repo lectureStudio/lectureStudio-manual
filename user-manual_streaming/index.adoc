@@ -1,10 +1,11 @@
 include::locale/attributes-de.adoc[]
 
-= Anleitung zu lectureStreaming
+= Anleitung zu lectureStudio
 :toc:
-:toclevels: 3
+:toc: left
+:toclevels: 4
 :Author: Das lectureStudio-Team
-:revnumber: 1.4.0
+:revnumber: 1.4.1
 :revdate: {localdate}
 :stylesdir: styles
 :stylesheet: custom.css

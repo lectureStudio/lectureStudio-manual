@@ -86,6 +86,111 @@ TIP: Um zu überprüfen, ob das Zugriffstoken funktioniert, klicken Sie auf den 
 Wenn Sie Bedenken hinsichtlich der Verwendung des Zugriffstokens haben, können Sie das Zugriffstoken löschen.
 
 
+
+[#lecturePresenter]
+=== lecturePresenter
+
+==== Vorbereitung
+
+Stellen Sie sicher, dass lectureStudio auf ihrem Gerät installiert ist. Anweisungen für die Installation finden Sie in Abschnitt 2 dieses Dokuments.
+
+Erstellen Sie die Vorlesungsfolien in einem Programm ihrer Wahl. Um sie in lectureStudio verwenden zu können, müssen Sie die Folien als PDF exportieren. Es wird empfohlen, die Folien mit dem gleichen
+Seitenverhältnis anzulegen, mit dem sie auch präsentiert werden sollen.
+
+===== PowerPoint-Präsentation in ein PDF umwandeln
+
+Sollten Sie ihre Präsentation mit PowerPoint erstellt haben, dann haben Sie mehrere Möglichkeiten die PowerPoint-Folien in ein PDF umzuwandeln.
+
+Hat ihre Präsentation einfache Animationen, dann bietet sich das Werkzeug http://www.maxonthenet.altervista.org/ppsplit.php[PPspliT,role=external,window=_blank] an. Dazu laden und installieren Sie die neueste Version von PPspliT. Um das Werkzeug zu verwenden, öffnen Sie die
+Präsentation mit PowerPoint und suchen in der Menü-Leiste nach __PPspliT__ (<<ppsplit>>).
+
+[#ppsplit]
+.PowerPoint-Präsentation mit PPspliT in PDF umwandeln
+image::presenter/ppsplit.png[width=40%,pdfwidth=40%,align=center]
+
+Sollten Sie kein PowerPoint haben, dann können Sie ihre Präsentation mit https://de.libreoffice.org/download/download/[LibreOffice,role=external,window=_blank] in ein PDF umwandeln. Laden und installieren Sie hierzu die neueste Version von LibreOffice. Als Nächstes öffnen Sie die Präsentation mit LibreOffice und wandeln diese über das Menü menu:Datei[Als PDF exportieren] in PDF um.
+
+===== Digitale Stifteingabe
+
+lecturePresenter ist mit dem Ziel entwickelt worden, um mit einem digitalen Stift zu arbeiten. Die digitale Stifteingabe ist zum Beispiel mit Convertibles wie Microsoft Surface Pro oder Lenovo Yoga möglich. Es ist auch möglich ein zum PC zusätzliches Tablet wie https://www.huion.com/pen_display[HUION Kamvas,role=external,window=_blank] mit Stift zu verwenden.
+
+===== Vor der Präsentation
+====== Mikrofon
+
+Schließen Sie das zu verwendende Mikrofon an den Rechner an. Sie können ein externes Headset benutzen, oder – sofern vorhanden – die Hörsaal-Audio-Anlage mit dem Laptop verbinden. Viele Laptops
+besitzen auch ein eingebautes Mikrofon, es wird jedoch von seiner Verwendung abgeraten, da die Audioqualität für gewöhnlich zu wünschen übrig lässt – besonders, wenn sich der Vortragende vom Rechner entfernt.
+
+Richten Sie nun das gewünschte Mikrofon ein (<<presenter-mic-settings>>):
+
+1. Öffnen Sie die Einstellungen über das Menü menu:Bearbeiten[Einstellungen].
+2. Navigieren Sie zum Tab *Mikrofon*.
+3. Wählen Sie das korrekte Mikrofon aus [1].
+4. Mit dem Regler [2] können Sie die Lautstärke des Mikrofons anpassen.
+5. Alternativ können Sie die Aufnahmelautstärke anpassen, indem Sie den Aufnahmepegel automatisch einstellen lassen [3].
++
+Klicken Sie im Dialog (<<presenter-mic-settings-auto>>) auf btn:[Beginnen] und sprechen Sie eine Zeit lang in das ausgewählte Mikrofon. Nachdem Sie auf btn:[Fertig] geklickt haben, wird die Mikrofonlautstärke auf den maximal erreichten Pegel eingestellt.
+
+6. Machen Sie eine kurze Aufzeichnung [4] und überprüfen diese auf Rauschen, Nebengeräusche, Hall, usw.
+7. Abschließend klicken Sie auf den Button btn:[Schließen], um die Einstellungen zu speichern.
+
+[#presenter-mic-settings]
+.Mikrofon-Einstellungen
+image::presenter/audio-settings.png[width=90%,pdfwidth=90%,align=center]
+
+[#presenter-mic-settings-auto]
+.Aufnahmepegel automatisch einstellen
+image::presenter/audio-settings-auto.png[width=90%,pdfwidth=90%,align=center]
+
+====== Anzeigegeräte
+
+Verbinden Sie den Videoausgang des Rechners mit dem Eingang des Anzeigegerätes, und vergewissern Sie sich, dass das Anzeigegerät eingeschaltet ist.
+
+Sie können den aktuellen Projektionsmodus einsehen und ändern:
+
+Windows:: Mit der Tastenkombination image:icons/windows.svg[,25,pdfwidth=22px] + P die Projektions-Seitenleiste öffnen.
++
+NOTE: Achten Sie darauf, dass der Projektionsmodus auf “*Erweitern*” gestellt ist, *nicht* auf “Duplizieren”.
+
+Linux (Ubuntu):: Öffnen Sie die *Aktivitäten*-Übersicht und tippen “Anzeige” ein, danach klicken Sie auf _Anzeigegeräte_.
++
+NOTE: Achten Sie darauf, dass in der Bildschirmkonfiguration die Option _Bildschirm spiegeln_ *nicht* ausgewählt ist.
++
+TIP: Diese Schritte können sich in anderen Linux-Distributionen unterscheiden.
+
+macOS:: Über das Apple-Menü image:icons/apple.svg[,25,pdfwidth=22px] > Systemeinstellungen, und auf _Displays_ klicken.
++
+NOTE: Achten Sie darauf, dass das Markierungsfeld _Bildschirme synchronisieren_ *nicht* aktiviert ist.
+
+
+==== Grundlagen des Arbeitsbereichs
+
+Starten Sie lecturePresenter über das Startmenü oder den Desktop Shortcut. Sie werden dann mit dem Startbildschirm begrüßt. Hier können Sie entweder eine der zuletzt geöffneten Dateien laden, ein leeres btn:[Whiteboard öffnen], oder über den Button btn:[Dokument öffnen] eine neue Datei auswählen.
+
+[#presenter-start]
+.Startbildschirm
+image::presenter/start.png[width=90%,pdfwidth=90%,align=center]
+
+Sobald Sie ein PDF-Dokument oder ein Whiteboard geöffnet haben, finden Sie die Benutzeroberfläche wie in <<presenter-overview>> dargestellt wieder.
+
+[#presenter-overview]
+.lecturePresenter
+image::presenter/overview.png[width=90%,pdfwidth=90%,align=center]
+
+
+
+
+
+[#toolbar-customize]
+==== Werkzeugleiste anpassen
+
+Die Werkzeugleiste lässt sich Ihren Bedürfnissen nach anpassen. So können Sie zum Beispiel nur die Werkzeuge in der Leiste anzeigen lassen, die Sie tatsächlich brauchen und nutzen. Für eine bessere Übersicht und Struktur können drei verschiedene Abstandshalter zwischen den Werkzeug-Buttons eingefügt werden: Ein vertikaler und schmaler Abstandshalter, ein etwas breiter Abstandshalter mit fester Breite und ein dynamischer Abstandshalter, der den leeren Raum in der Leiste einnimmt und so die Buttons in die Ecken der Werkzeugleiste verschiebt.
+
+Die Benutzeroberfläche zur Anpassung der Werkzeugleiste ist in <<presenter-toolbar-config>> zu sehen. Die einzelnen Buttons können aus dem Dialog in die Werkzeugleiste gezogen und an die gewünschte Position hinzugefügt werden. Um die Buttons aus der Werkzeugleiste zu entfernen, ziehen Sie den jeweiligen Button aus der Werkzeugleiste heraus und legen diesen irgendwo im Fenster ab.
+
+[#presenter-toolbar-config]
+.Werkzeugleiste anpassen
+image::toolbar-config.png[width=60%,pdfwidth=60%,align=center]
+
 [#stream-start]
 ==== Stream starten
 
@@ -111,7 +216,7 @@ NOTE: All diese Funktionen lassen sich auch während des laufenden Streams ein- 
 . Um den Stream zu beginnen, klicken Sie auf btn:[Start].
 
 
-=== Statusindikatoren
+==== Statusindikatoren
 
 lecturePresenter hat in der rechten oberen Ecke der Oberfläche Indikatoren für den aktuellen Status des Streamings integriert (<<stream-indicators>>).
 
@@ -128,9 +233,9 @@ image:icons/stream.svg[,25]:: Zeigt an, ob ein Stream läuft und wie viele Teiln
 
 
 [#quizzes]
-=== Quizze
+==== Quizze
 
-==== Quiz erstellen
+===== Quiz erstellen
 lecturePresenter erlaubt es Ihnen, während der Vorlesung in Echtzeit Quizze zu starten, an denen die Teilnehmer über einen Browser teilnehmen können. Um ein Quiz zu erstellen, müssen Sie dieses zunächst anlegen. Wählen Sie dazu den Menüpunkt Vortrag Quiz erstellen. Es öffnet sich eine Bedienoberfläche (<<quiz-create>>), über die Sie das Quiz erstellen.
 
 [#quiz-create]
@@ -141,10 +246,10 @@ Geben Sie eine Quizfrage ein [1]. Verschiedene Formatierungsmöglichkeiten sind 
 
 Wählen Sie den Quizstil [3] aus. Es stehen drei Stile zur Verfügung; `Multiple choice` (Mehrfachauswahl), `Eine Antwort` und `Numerisch`.
 
-===== Multiple Choice und Eine Antwort
+====== Multiple Choice und Eine Antwort
 Die Antwortmöglichkeiten werden im Feld [4] als Text eingegeben. Neue Antwortmöglichkeiten erstellen Sie mit dem Button [5] oder mit der Taste Tab . Um eine Antwort zu löschen, klicken Sie den Button image:icons/delete.svg[,25,pdfwidth=22px] [6]. Mit den aufwärts und abwärts Buttons [7] können Sie die Reihenfolge der Antworten verändern.
 
-===== Numerische Antworten
+====== Numerische Antworten
 Für Fragen vom Stil `Numerisch` können Sie einen oder mehrere Einträge hinzufügen. Jede Antwortmöglichkeit (<<quiz-create-numeric>>) besitzt eine Beschreibung [1] und ein erlaubtes Werteintervall in Form von Min- und Max-Feldern[2][3], für die Eingabe bei der Teilnahme am Quiz. Numerische Antworten lassen sich ebenfalls sortieren und entfernen, wie im vorherigen Abschnitt beschrieben.
 
 [#quiz-create-numeric]
@@ -155,7 +260,7 @@ Nachdem Sie alles Gewünschte eingegeben haben, haben Sie die Möglichkeit das Q
 
 Sobald das Quiz erfolgreich freigegeben wurde, öffnet sich ein neues Dokument mit dem Namen `Quiz` und das Quiz ist jetzt für die Teilnehmer über einen Browser zugänglich. Das Quiz-Dokument wird in Echtzeit aktualisiert während die Antworten eintreffen. Um die Quizergebnisse anzuzeigen, wechseln sie auf die nächste Folie des Quiz-Dokuments.
 
-==== Quiz aus der Quizsammlung auswählen
+===== Quiz aus der Quizsammlung auswählen
 
 Um den Teilnehmern eine ihrer angelegten Fragen aus ihrer Quizsammlung zu stellen, wählen Sie den Menüpunkt menu:Vortrag[Quiz auswählen]. Es öffnet sich die Fragenliste, in der Sie bestehende Fragen bearbeiten, löschen oder stellen können. Wählen Sie die gewünschte Frage aus und klicken btn:[Quiz stellen].
 
@@ -163,7 +268,7 @@ Um den Teilnehmern eine ihrer angelegten Fragen aus ihrer Quizsammlung zu stelle
 .Quiz auswählen
 image::select-quiz.png[width=60%,pdfwidth=60%,align=center]
 
-==== Quiz-Modi
+===== Quiz-Modi
 
 Ein Quiz kann mit oder ohne einen laufenden Stream gestellt werden. Wird ein Quiz ohne einen gerade laufenden Stream gestellt, so wird das Quiz anstelle des Streams auf der Webseite angezeigt. Ein aktives Quiz kann auf zwei Wegen beendet werden: Durch den Menüpunkt menu:Vortrag[Quiz beenden] oder den Button btn:[Beenden] unter den Vorschaufolien.
 
@@ -176,7 +281,7 @@ Quizergebnisse können Sie mit folgenden Schritten den Teilnehmern präsentieren
 
 
 [#messages]
-=== Empfang von Nachrichten
+==== Empfang von Nachrichten
 
 Textnachrichten können empfangen werden, wenn die Funktion `Messenger` aktiviert wurde. Empfangene Nachrichten sind in lecturePresenter unter der Folienanzeige zu sehen (<<presenter-messages>>). Eine Textnachricht enthält den Vor- und Nachnamen des/der Verfassenden, die Uhrzeit und den Text der Nachricht selbst.
 
@@ -189,7 +294,7 @@ Während eines Vortrags mit sehr vielen Teilnehmenden kann es vorkommen, dass Si
 Mit dem Button image:icons/message-slide.svg[,25,pdfwidth=22px] kann eine neue Folie mit dem Text der empfangenen Nachricht erstellt werden. Diese Folie wird in lecturePresenter sofort angezeigt, aufgezeichnet und im Stream verteilt, sofern Sie den Vortrag aufzeichnen bzw. streamen.
 
 [#speeches]
-=== Meldungen
+==== Meldungen
 
 Meldungen sehen Sie dort, wo auch Textnachrichten in lecturePresenter angezeigt werden, unter der Folienanzeige (<<presenter-speeches>>). Eine Meldung enthält den Vor- und Nachnamen des/der Meldenden und die Uhrzeit. Sie können eine Meldung annehmen image:icons/speech-accept.svg[,25,pdfwidth=22px] oder ablehnen image:icons/speech-decline.svg[,25,pdfwidth=22px]. In beiden Fällen wird die Meldung aus der Liste entfernt.
 
@@ -217,20 +322,21 @@ Der Redebeitrag wird beendet durch:
 * Meldende selbst.
 
 [#screen-share]
-=== Bildschirmfreigabe
+==== Bildschirmfreigabe
 
 Mit lecturePresenter können Sie Ihren Bildschirm für andere Teilnehmer/innen teilen. Sie können Ihren gesamten Bildschirm oder nur bestimmte Fenster und Programme freigeben. Das ermöglicht Ihnen beispielsweise, eine Werkzeug-Demo vorzuführen. Hierfür gehen Sie wie folgt vor:
 
-1. Starten Sie einen Stream, wie in Abschnitt <<stream-start>> beschrieben.
-2. Klicken Sie in der Werkzeugleiste auf image:icons/screen-share.svg[,25,pdfwidth=22px].
-3. Ihnen wird der Dialog für die Bildschirmfreigabe angezeigt. Ein beispielhafter Dialog ist in <<screen-share-select>> zu sehen.
+1. Falls der Button image:icons/screen-share.svg[,25,pdfwidth=22px] in der Werkzeugleiste nicht zu sehen ist, fügen Sie diesen, wie in Abschnitt <<toolbar-customize>> beschrieben ist, hinzu.
+2. Starten Sie einen Stream, wie in Abschnitt <<stream-start>> beschrieben.
+3. Klicken Sie in der Werkzeugleiste auf image:icons/screen-share.svg[,25,pdfwidth=22px].
+4. Ihnen wird der Dialog für die Bildschirmfreigabe angezeigt. Ein beispielhafter Dialog ist in <<screen-share-select>> zu sehen.
 +
 [#screen-share-select]
 .Dialog für Bildschirmfreigabe
 image::screen-share-1.png[width=50%,pdfwidth=50%,align=center]
 
-4. Einen Bildschirm oder ein Fenster für die Freigabe auswählen und btn:[Start] klicken.
-5. Ein neues Dokument wird erstellt und geöffnet. Auf der ersten Folie des Dokuments wird ein Schnappschuss des freizugebenden Bildschirminhalts angezeigt (<<screen-share-doc>>). Dieses Dokument wird gleichzeitig an alle Teilnehmer/innen verteilt und bei allen Teilnehmenden angezeigt. Sie können in diesem Dokument auch alle Annotationswerkzeuge nutzen.
+5. Einen Bildschirm oder ein Fenster für die Freigabe auswählen und btn:[Start] klicken.
+6. Ein neues Dokument wird erstellt und geöffnet. Auf der ersten Folie des Dokuments wird ein Schnappschuss des freizugebenden Bildschirminhalts angezeigt (<<screen-share-doc>>). Dieses Dokument wird gleichzeitig an alle Teilnehmer/innen verteilt und bei allen Teilnehmenden angezeigt. Sie können in diesem Dokument auch alle Annotationswerkzeuge nutzen.
 +
 [#screen-share-doc]
 .Schnappschuss der Bildschirmfreigabe im neuen Dokument
@@ -238,20 +344,249 @@ image::screen-share-2.png[width=50%,pdfwidth=50%,align=center]
 +
 NOTE: Zu diesem Zeitpunkt hat die Bildschirmfreigabe noch nicht begonnen!
 
-6. Die Bildschirmfreigabe beginnen Sie, indem Sie auf image:icons/record-tool.svg[,25,pdfwidth=22px] [1] klicken. Falls ein Fenster freigegeben wurde, wird dieses automatisch fokusiert und bei Ihnen auf dem Bildschirm in den Vordergrund gebracht.
-7. Alle Teilnehmer/innen bekommen den freigegebenen Bildschirminhalt in Form von gestreamten Video angezeigt (<<screen-share-stream>>).
+7. Die Bildschirmfreigabe beginnen Sie, indem Sie auf image:icons/record-tool.svg[,25,pdfwidth=22px] [1] klicken. Falls ein Fenster freigegeben wurde, wird dieses automatisch fokusiert und bei Ihnen auf dem Bildschirm in den Vordergrund gebracht.
+8. Alle Teilnehmer/innen bekommen den freigegebenen Bildschirminhalt in Form von gestreamten Video angezeigt (<<screen-share-stream>>).
 +
 [#screen-share-stream]
 .Anzeige der Bildschirmfreigabe bei Teilnehmenden
 image::screen-share-3.png[width=50%,pdfwidth=50%,align=center]
 
-==== Bildschirmfreigabe pausieren
+===== Bildschirmfreigabe pausieren
 Die Bildschirmfreigabe lässt sich pausieren. Dies ist insbesondere dann hilfreich, wenn Sie einen Schnappschuss des freigegebenen Bildschirminhalts machen möchten, um den aktuellen Zustand der Freigabe auf einer Folie festzuhalten.
 
 1. Hierfür klicken Sie auf image:icons/record-pause-tool.svg[,25,pdfwidth=22px] [1].
 2. Eine neue Folie wird mit einem neuen Schnappschuss des freigegebenen Bildschirminhalts im Dokument erstellt und ausgewählt. Diese neue Folie wird an alle Teilnehmenden verteilt und bei allen angezeigt.
 
-==== Bildschirmfreigabe beenden
+===== Bildschirmfreigabe beenden
 Um die Bildschirmfreigabe zu beenden, klicken Sie auf image:icons/record-stop-tool.svg[,25,pdfwidth=22px] [2]. Das dazu erstellte Dokument wird geschlossen.
+
+
+
+[#lectureEditor]
+=== lectureEditor
+
+==== Grundlagen des Arbeitsbereichs
+
+[#lectureEditor-window]
+.lectureEditor
+image::editor-main.png[width=90%,pdfwidth=90%,align=center]
+
+===== Bearbeitungs-Funktionen
+
+[horizontal]
+image:icons/editor-export-recording.svg[,25]:: Zeigt Bedien- und Einstellungselemente an, um die Aufzeichnung in ein komprimiertes Format zu konvertieren.
+image:icons/editor-noise-reduction.svg[,25]:: Zeigt Bedien- und Einstellungselemente für die Rauschunterdrückung an.
+image:icons/editor-page-events.svg[,25]:: Zeigt alle Annotationen zu der aktuell angezeigten Folie an. Über diese Ansicht können einzelne Annotationen aus der Folie entfernt werden.
+
+===== Folienvorschau
+
+In diesem Bereich werden Miniaturbilder für die einzelnen aufgezeichneten Folien angezeigt. Die nächste Folie ist oben sichtbar. Um eine Folie auszuwählen, klicken Sie auf das jeweilige Miniaturbild. Beim Folienwechsel passt sich die Folienvorschau automatisch an und zeigt die nächsten Folien beginnend mit der darauffolgenden Folie von oben nach unten an. Sie haben auch die Möglichkeit die Aufzeichnung durchzublättern, indem Sie die Bildlaufleiste verwenden, um sich vorwärts und rückwärts durch die Aufzeichnung zu bewegen. Der blaue Rahmen um das Miniaturbild kennzeichnet die Folie, die gerade angezeigt wird.
+
+===== Werkzeuge
+
+[#lectureEditor-toolbar]
+.lectureEditor-Werkzeugleiste
+image::editor-toolbar.png[width=45%,pdfwidth=45%,align=center]
+
+[horizontal]
+image:icons/editor-undo.svg[,25]:: Letzten Bearbeitungsschritt rückgängig machen.
+image:icons/editor-redo.svg[,25]:: Gelöschten Bearbeitungsschritt wiederherstellen.
+image:icons/editor-cut.svg[,25]:: Aktuellen Auswahlbereich entfernen.
+image:icons/editor-adjust-volume.svg[,25]:: Lautstärke im Auswahlbereich anpassen.
+image:icons/editor-cut-page.svg[,25]:: Aktuelle Folie entfernen.
+image:icons/editor-replace-page.svg[,25]:: Aktuelle Folie durch eine andere ersetzen.
+image:icons/editor-import.svg[,25]:: Eine Aufzeichnung an die aktuelle Zeitmarker-Position importieren.
+image:icons/editor-zoom-out.svg[,25]:: In die Waveform reinzoomen.
+image:icons/editor-zoom-in.svg[,25]:: Aus der Waveform rauszoomen.
+image:icons/editor-collapse-selection.svg[,25]:: Auswahlbereich zusammenführen.
+
+===== Annotationen
+
+In der Annotationen-Leiste werden Markierungen für alle aufgezeichneten Seitenwechsel und Annotationen angezeigt. Die Markierungen passen sich automatisch an den Zeitabschnitt an, den Sie sich gerade anschauen, reinzoomen oder durchblättern. Die Seitenwechsel werden durch ein Rechteck mit der Seitennummer markiert. Alle Annotationen werden durch jeweils kleine rote Balken markiert. Folgen viele Annotationen, die zeitlich nah beieinander durchgeführt wurden, so kann es zu einem breiten roten Balken führen. Dies ist vor allem bei Stift-Annotationen der Fall, da jeder Punkt, den der Stift durchläuft, als eine einzelne Markierung zählt.
+
+==== Schneiden
+
+Um Stille, einen Fehler oder einen unnötigen Abschnitt aus der Aufnahme zu löschen, markieren Sie diesen Bereich in der Waveform mit den Zeitmarkern.
+
+1. Navigieren Sie in der Waveform an die gewünschte Position.
+2. Bewegen Sie den Zeitmarker image:icons/editor-slider.svg[,25,pdfwidth=22px] oder die sekundären Zeitmarker image:icons/editor-slider-left.svg[,25,pdfwidth=22px]image:icons/editor-slider-right.svg[,25,pdfwidth=22px] nach links oder rechts, um den gewünschten Bereich auszuwählen.
++
+Der ausgewählte Bereich ist vom grünen Rechteck umschlossen (<<lectureEditor-timeline-select>>).
++
+[#lectureEditor-timeline-select]
+.Auswahlbereich
+image::editor-timeline-select.png[width=70%,pdfwidth=70%,align=center]
+
+3. Klicken Sie auf _Ausschneiden_ image:icons/editor-cut.svg[,25,pdfwidth=22px] über der Waveform.
++
+Dadurch wird der Auswahlbereich entfernt. Alle darauffolgenden Folien samt Annotationen werden nach links verschoben, um die Lücke zu schließen.
+
+===== Komplette Folie entfernen
+
+Folien samt Annotationen lassen sich auch ohne die Auswahl mit Zeitmarkern in der Waveform entfernen.
+
+1. Navigieren Sie auf eine Folie, die Sie komplett entfernen möchten.
+2. Klicken Sie auf _Aktuelle Seite entfernen_ image:icons/editor-cut-page.svg[,25,pdfwidth=22px] über der Waveform.
+
+*Alternativ:*
+
+1. Rechtsklick mit der Maus auf die Folie in der Vorschauleiste (<<lectureEditor-delete-page>>).
++
+[#lectureEditor-delete-page]
+.Komplette Folie aus der Aufzeichnung entfernen
+image::editor-delete-page.png[width=25%,pdfwidth=25%,align=center]
+
+2. Klicken Sie auf _Seite entfernen_ im Kontextmenü.
+
+
+==== Folie ersetzen
+
+Sie können Folien im aufgezeichneten Dokument ersetzen. Diese Funktion ist hilfreich, wenn Sie eine Aufzeichnung wiederverwenden und zum Beispiel nur das Datum anpassen möchten, oder Fehler wie bei-
+spielsweise Rechtschreibfehler beheben möchten. Alle Annotationen und Audio, die auf dieser Folie gemacht wurden, bleiben unverändert erhalten.
+
+1. Navigieren Sie auf eine Folie, die Sie ersetzen möchten.
+2. Klicken Sie auf _Aktuelle Seite ersetzen_ image:icons/editor-replace-page.svg[,25,pdfwidth=22px] über der Waveform.
+3. Im Datei-Auswahl-Dialog einen Foliensatz auswählen, in dem sich die neue Folie befindet.
+4. Wählen Sie im Foliensatz die neue Folie aus und klicken btn:[Ersetzen].
+5. Die ausgewählte Folie wurde ersetzt.
+
+==== Lautstärke anpassen
+
+Es kann vorkommen, dass Sie die Lautstärke in einzelnen Passagen ihrer Aufzeichnung verändern möchten. Dies kann zum Beispiel nach dem Einfügen einer neuen Passage der Fall sein.
+
+1. Navigieren Sie in der Waveform an die gewünschte Position.
+2. Bewegen Sie den Zeitmarker image:icons/editor-slider.svg[,25,pdfwidth=22px] oder die sekundären Zeitmarker image:icons/editor-slider-left.svg[,25,pdfwidth=22px]image:icons/editor-slider-right.svg[,25,pdfwidth=22px] nach links oder rechts, um den gewünschten Bereich auszuwählen.
++
+Der ausgewählte Bereich ist vom grünen Rechteck umschlossen (<<lectureEditor-timeline-adjust-audio>>).
++
+[#lectureEditor-timeline-adjust-audio]
+.Auswahlbereich zur Anpassung der Lautstärke
+image::editor-timeline-select-2.png[width=70%,pdfwidth=70%,align=center]
+
+3. Klicken Sie auf _Lautstärke anpassen_ image:icons/editor-adjust-volume.svg[,25,pdfwidth=22px] über der Waveform. Es wird ein neuer violetter Auswahlbereich für die Anpassung der Lautstärke erstellt.
+4. Im violetten Auswahlbereich können Sie nun die Lautstärke anpassen (<<lectureEditor-timeline-adjust-audio-slider>>). Bewegen Sie den horizontalen Balken nach oben, um die Lautstärke zu erhöhen, oder nach unten, um sie zu senken [1]. Die Änderung ist sofort in der Waveform sichtbar.
++
+[#lectureEditor-timeline-adjust-audio-slider]
+.Lautstärke anpassen im Auswahlbereich
+image::editor-timeline-adjust-volume.png[width=70%,pdfwidth=70%,align=center]
++
+TIP: Es wird empfohlen den grünen Auswahlbereich mit image:icons/editor-collapse-selection.svg[,25,pdfwidth=22px] zusammenzufalten.
+
+5. Sollten Sie es sich anders überlegt haben, so können Sie die Anpassung mit btn:[X] [2] oder image:icons/editor-undo.svg[,25,pdfwidth=22px] rückgängig machen.
+
+==== Rauschunterdrückung
+
+Je nach Qualität des Mikrofons, wird neben der Sprache auch Rauschen aufgezeichnet. Um die Sprachverständlichkeit zu erhöhen, kann ein Rauschunterdrückungsverfahren angewandt werden. Da statistische Rauschsignale sich im Allgemeinen nicht gut komprimieren lassen, führt die Rauschunterdrückung zu einer Reduktion der Dateigröße einer komprimierten Video-Aufzeichnung.
+
+1. Wählen Sie in der Waveform mit den Zeitmarkern einen Bereich mit Stille aus, d.h. ohne Sprach-/Audiosignal. Die Pegel sind in der Waveform nahe der Mittellinie (<<lectureEditor-timeline-silence>>).
++
+[#lectureEditor-timeline-silence]
+.Stille auswählen
+image::editor-timeline-silence.png[width=70%,pdfwidth=70%,align=center]
+
+2. Über Menü menu:Effekt[Markiertes Zeitintervall als Stille definieren] wird das Rauschsignal analysiert.
+3. Über Menü menu:Effekt[Entrauschen] öffnen Sie den Dialog zur Rauschunterdrückung (<<lectureEditor-nr-dialog>>).
++
+[#lectureEditor-nr-dialog]
+.Rauschunterdrückung
+image::editor-nr-dialog.png[width=25%,pdfwidth=25%,align=center]
+
+4. Der Standardwert der Empfindlichkeit ist so eingestellt, dass er für die meisten Aufzeichnungen nicht verändert werden muss. Um sicherzugehen, ob die Empfindlichkeit der Rauschunterdrückung passt, führen Sie den nächsten Schritt aus.
++
+NOTE: Je höher der Wert, desto mehr Signale werden aus der Aufzeichnung entfernt. Ein zu hoher Wert beeinträchtigt die Qualität der Sprache, da auch hier die dazugehörenden Frequenzen unterdrückt werden.
+
+5. Sie können probeweise entrauschen und vorhören. Dazu klicken Sie zunächst btn:[Probeweise] und dann image:icons/editor-play.svg[,25,pdfwidth=22px].
++
+Eine Veränderung des Spektrogramms ist in <<lectureEditor-nr-dialog-test>> zu sehen. Es ist zu erkennen, dass hauptsächlich Frequenzen der Sprache übrig geblieben sind.
++
+Wenn Sie mit dem Resultat nicht zufrieden sind, dann verstellen Sie die Empfindlichkeit und klicken erneut btn:[Probeweise].
++
+[#lectureEditor-nr-dialog-test]
+.Probeweise Rauschunterdrückung
+image::editor-nr-dialog-test.png[width=25%,pdfwidth=25%,align=center]
+
+6. Damit die Rauschunterdrückung auf die gesamte Aufzeichnung angewandt wird, drücken Sie btn:[Endgültig].
++
+Der Dialog schließt sich automatisch, nachdem die Rauschunterdrückung erfolgreich durchgelaufen ist.
+
+
+[#lectureEditor-video]
+==== Video-Export
+
+Exportieren Sie Ihre Aufzeichnung als komprimiertes Video, das in allen gängigen Videoplayern wiedergegeben werden kann.
+
+1. Klicken Sie auf btn:[Erstellen] im Schnellzugriff für den Video-Export. Es öffnet sich ein Dialog (<<lectureEditor-video-export>>).
++
+[#lectureEditor-video-export]
+.Video-Export
+image::editor-video-export.png[width=50%,pdfwidth=50%,align=center]
+
+2. Wählen Sie den Speicherort aus.
+3. Aktivieren Sie die Option _Video_, um im nächsten Schritt die Videodatei zu erstellen. Zu dem Video wird eine HTML-Datei mit erweiterten Funktionen wie die Textsuche und Anspringen von Folien im Video generiert.
++
+NOTE: Die HTML-Datei kann mit dem Video auf den Helios Medienserver der TU Darmstadt geladen und freigegeben werden.
++
+Die HTML-Darstellung einer beispielhaften Aufzeichnung ist in <<lectureEditor-video-export-html>> zu sehen.
++
+[#lectureEditor-video-export-html]
+.Video-Export mit HTML-Format
+image::editor-html-export.png[width=50%,pdfwidth=50%,align=center]
+
+4. Aktivieren Sie die Option _HTML Vektor Player_, wenn zu dem Video eine komprimierte Aufzeichnung im Vektorformat erstellt werden soll. Die damit erzeugte Aufzeichnungsdatei kann über die mitgelieferte HTML-Datei wiedergegeben werden.
++
+NOTE: In der Regel haben komprimierte Vektor-Aufzeichnungen eine geringere Dateigröße als komprimierte Videos, haben aber den Nachteil, dass sie nur mit der HTML-Datei, die die Wiedergabe-Funktionalität implementiert, wiedergegeben werden können.
+
+5. Klicken Sie auf btn:[Erstellen].
+
+===== Alternativ mit Experteneinstellungen
+
+1. Um mehr Einfluss auf die Qualität des Videos zu bekommen, klicken Sie auf die Reiter _Video_ und/oder _Audio_. Sie bekommen die erweiterten Bedienelemente (<<lectureEditor-video-export-extended>>)
+zu sehen.
++
+[#lectureEditor-video-export-extended]
+.Erweiterte Video-Export-Einstellungen
+image::editor-extended-video-export.png[width=25%,pdfwidth=25%,align=center]
+
+2. Nehmen Sie die gewünschten Einstellungen vor. Die Standardwerte sind so eingestellt, dass ein Video mit guter Qualität und geringer Dateigröße erstellt wird.
++
+NOTE: Je höher die Werte, desto besser ist die Qualität des Videos. Mit besserer Qualität erhöht sich auch die Dateigröße des Videos.
+
+3. Anschließend klicken Sie auf btn:[Erstellen] und fahren mit den zuvor beschriebenen Schritten in Absatz <<lectureEditor-video>> fort.
+
+
+==== Tastenbelegung
+
+
+. lectureEditor-Tastenbelegung
+|===
+|Tasten |Aktion
+
+|kbd:[Strg + O],
+|Aufzeichnung öffnen.
+
+|kbd:[Strg + F4]
+|Aufzeichnung schließen.
+
+|kbd:[Strg + Q]
+|Programm beenden.
+
+|kbd:[Alt + Enter]
+|Vollbildmodus umschalten.
+
+|kbd:[Strg + Z]
+|Letzten Bearbeitungsschritt rückgängig machen.
+
+|kbd:[Strg + Y]
+|Gelöschten Bearbeitungsschritt wiederherstellen.
+
+|kbd:[Strg + X]
+|Aktuellen Auswahlbereich entfernen.
+
+|kbd:[Strg + D]
+|Aktuelle Folie entfernen.
+|===
+
+
+
 
 <<<
