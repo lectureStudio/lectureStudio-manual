@@ -1,6 +1,6 @@
 == Dozenten/innen
 
-Um einen Kurs mit lecturePresenter streamen zu können, müssen Sie einen Kurs erstellt haben. Es können auch mehrere Kurse erstellt werden, wenn Sie mehrere Lehrveranstaltungen anbieten. Des Weiteren muss ein Zugriffstoken generiert werden, der Ihre lecturePresenter-Instanz gegenüber dem Streamingdienst authentifiziert. Wie Sie das bewältigen wird im Folgenden erklärt.
+Um einen Kurs mit lecturePresenter streamen zu können, müssen Sie einen Kurs erstellt haben. Es können auch mehrere Kurse erstellt werden, wenn Sie mehrere Lehrveranstaltungen anbieten. Des Weiteren muss ein Zugriffstoken generiert werden, der Ihre lecturePresenter-Instanz gegenüber dem Streamingdienst authentifiziert. Wie Sie das bewältigen, wird im Folgenden erklärt.
 
 [#create-course]
 === Kurs erstellen
@@ -20,7 +20,7 @@ TIP: Als Ersteller:in eines Kurses erhalten Sie automatisch alle existierenden P
 
 ===== Organisator:in
 
-Organisator:innen verfügen über umfassende Privilegien. Diese können administrative Funktionen wie zum Beispiel die Teilnehmerverwaltung übernehmen. Zu den wichtigsten Privilegien dieser Rolle gehören zum Beispiel:
+Organisator:innen verfügen über umfassende Privilegien. Diese können administrative Funktionen, wie zum Beispiel die Teilnehmerverwaltung, übernehmen. Zu den wichtigsten Privilegien dieser Rolle gehören zum Beispiel:
 
 * Einstellungen des Kurses ändern
 * Rollen und Privilegien von Teilnehmern ändern
@@ -94,7 +94,7 @@ Wenn Sie Bedenken hinsichtlich der Verwendung des Zugriffstokens haben, können 
 
 Stellen Sie sicher, dass lectureStudio auf ihrem Gerät installiert ist. Anweisungen für die Installation finden Sie in Abschnitt 2 dieses Dokuments.
 
-Erstellen Sie die Vorlesungsfolien in einem Programm ihrer Wahl. Um sie in lectureStudio verwenden zu können, müssen Sie die Folien als PDF exportieren. Es wird empfohlen, die Folien mit dem gleichen
+Erstellen Sie die Vorlesungsfolien in einem Programm Ihrer Wahl. Um sie in lectureStudio verwenden zu können, müssen Sie die Folien als PDF exportieren. Es wird empfohlen, die Folien mit dem gleichen
 Seitenverhältnis anzulegen, mit dem sie auch präsentiert werden sollen.
 
 ===== PowerPoint-Präsentation in ein PDF umwandeln
@@ -206,7 +206,7 @@ Sobald Sie einen Stream starten, wird zunächst ein Dialog wie in <<stream-start
 image::stream-start.png[width=60%,pdfwidth=60%,align=center]
 
 . In der Auswahlliste werden alle von Ihnen erstellten Kurse aufgelistet. Wählen Sie hier den Kurs aus, der zu Ihrem aktuellen Vortrag passt.
-. Sie haben hier noch die Möglichkeit die richtigen Ein- und Ausgabegeräte einzustellen und diese zu testen. Zudem haben Sie die Wahl, ob Sie den Kurs mit eingeschaltetem Mikrofon oder eingeschalteter Kamera beginnen möchten.
+. Sie haben hier noch die Möglichkeit, die richtigen Ein- und Ausgabegeräte einzustellen und diese zu testen. Zudem haben Sie die Wahl, ob Sie den Kurs mit eingeschaltetem Mikrofon oder eingeschalteter Kamera beginnen möchten.
 . Die Einstellung des Lautsprechers ist nur dann relevant, wenn Sie Redebeiträge annehmen. Das Audio von Redebeiträgen wird dann auf dem ausgewählten Lautsprecher wiedergegeben.
 +
 Falls Sie den Empfang von unidirektionalen Textnachrichten für den Kurs einschalten möchten, dann aktivieren Sie die Option `Messenger`.
@@ -258,11 +258,11 @@ image::create-quiz-numeric.png[width=60%,pdfwidth=60%,align=center]
 
 Nachdem Sie alles Gewünschte eingegeben haben, haben Sie die Möglichkeit das Quiz zu speichern, bevor Sie das Quiz freigeben. Zum Speichern drücken Sie den Button btn:[Quiz speichern]. Um das Quiz freizugeben, klicken Sie btn:[Quiz stellen].
 
-Sobald das Quiz erfolgreich freigegeben wurde, öffnet sich ein neues Dokument mit dem Namen `Quiz` und das Quiz ist jetzt für die Teilnehmer über einen Browser zugänglich. Das Quiz-Dokument wird in Echtzeit aktualisiert während die Antworten eintreffen. Um die Quizergebnisse anzuzeigen, wechseln sie auf die nächste Folie des Quiz-Dokuments.
+Sobald das Quiz erfolgreich freigegeben wurde, öffnet sich ein neues Dokument mit dem Namen `Quiz` und das Quiz ist jetzt für die Teilnehmer über einen Browser zugänglich. Das Quiz-Dokument wird in Echtzeit aktualisiert, während die Antworten eintreffen. Um die Quizergebnisse anzuzeigen, wechseln Sie auf die nächste Folie des Quiz-Dokuments.
 
 ===== Quiz aus der Quizsammlung auswählen
 
-Um den Teilnehmern eine ihrer angelegten Fragen aus ihrer Quizsammlung zu stellen, wählen Sie den Menüpunkt menu:Vortrag[Quiz auswählen]. Es öffnet sich die Fragenliste, in der Sie bestehende Fragen bearbeiten, löschen oder stellen können. Wählen Sie die gewünschte Frage aus und klicken btn:[Quiz stellen].
+Um den Teilnehmern eine Ihrer angelegten Fragen aus Ihrer Quizsammlung zu stellen, wählen Sie den Menüpunkt menu:Vortrag[Quiz auswählen]. Es öffnet sich die Fragenliste, in der Sie bestehende Fragen bearbeiten, löschen oder stellen können. Wählen Sie die gewünschte Frage aus und klicken btn:[Quiz stellen].
 
 [#quiz-select]
 .Quiz auswählen
@@ -272,7 +272,7 @@ image::select-quiz.png[width=60%,pdfwidth=60%,align=center]
 
 Ein Quiz kann mit oder ohne einen laufenden Stream gestellt werden. Wird ein Quiz ohne einen gerade laufenden Stream gestellt, so wird das Quiz anstelle des Streams auf der Webseite angezeigt. Ein aktives Quiz kann auf zwei Wegen beendet werden: Durch den Menüpunkt menu:Vortrag[Quiz beenden] oder den Button btn:[Beenden] unter den Vorschaufolien.
 
-Stellen Sie ein Quiz während der Stream zum Vortrag läuft, so sehen Sie unter den Vorschaufolien einen zusätzlichen Button btn:[Teilen]. Dieser Button ist dafür da, um die Quizergebnisse mit den Teilnehmern zu teilen. Denn die Teilnehmer können die Ergebnisse so lange nicht sehen, bis diese geteilt wurden. Die Ergebnisse können auch nur dann geteilt werden, wenn Sie das Quiz beenden.
+Stellen Sie ein Quiz, während der Stream zum Vortrag läuft, so sehen Sie unter den Vorschaufolien einen zusätzlichen Button btn:[Teilen]. Dieser Button ist dafür da, um die Quizergebnisse mit den Teilnehmern zu teilen. Denn die Teilnehmer können die Ergebnisse so lange nicht sehen, bis diese geteilt wurden. Die Ergebnisse können auch nur dann geteilt werden, wenn Sie das Quiz beenden.
 
 Quizergebnisse können Sie mit folgenden Schritten den Teilnehmern präsentieren:
 
@@ -344,7 +344,7 @@ image::screen-share-2.png[width=50%,pdfwidth=50%,align=center]
 +
 NOTE: Zu diesem Zeitpunkt hat die Bildschirmfreigabe noch nicht begonnen!
 
-7. Die Bildschirmfreigabe beginnen Sie, indem Sie auf image:icons/record-tool.svg[,25,pdfwidth=22px] [1] klicken. Falls ein Fenster freigegeben wurde, wird dieses automatisch fokusiert und bei Ihnen auf dem Bildschirm in den Vordergrund gebracht.
+7. Die Bildschirmfreigabe beginnen Sie, indem Sie auf image:icons/record-tool.svg[,25,pdfwidth=22px] [1] klicken. Falls ein Fenster freigegeben wurde, wird dieses automatisch fokussiert und bei Ihnen auf dem Bildschirm in den Vordergrund gebracht.
 8. Alle Teilnehmer/innen bekommen den freigegebenen Bildschirminhalt in Form von gestreamten Video angezeigt (<<screen-share-stream>>).
 +
 [#screen-share-stream]
@@ -380,7 +380,7 @@ image:icons/editor-page-events.svg[,25]:: Zeigt alle Annotationen zu der aktuell
 
 ===== Folienvorschau
 
-In diesem Bereich werden Miniaturbilder für die einzelnen aufgezeichneten Folien angezeigt. Die nächste Folie ist oben sichtbar. Um eine Folie auszuwählen, klicken Sie auf das jeweilige Miniaturbild. Beim Folienwechsel passt sich die Folienvorschau automatisch an und zeigt die nächsten Folien beginnend mit der darauffolgenden Folie von oben nach unten an. Sie haben auch die Möglichkeit die Aufzeichnung durchzublättern, indem Sie die Bildlaufleiste verwenden, um sich vorwärts und rückwärts durch die Aufzeichnung zu bewegen. Der blaue Rahmen um das Miniaturbild kennzeichnet die Folie, die gerade angezeigt wird.
+In diesem Bereich werden Miniaturbilder für die einzelnen aufgezeichneten Folien angezeigt. Die nächste Folie ist oben sichtbar. Um eine Folie auszuwählen, klicken Sie auf das jeweilige Miniaturbild. Beim Folienwechsel passt sich die Folienvorschau automatisch an und zeigt die nächsten Folien beginnend mit der darauffolgenden Folie von oben nach unten an. Sie haben auch die Möglichkeit, die Aufzeichnung durchzublättern, indem Sie die Bildlaufleiste verwenden, um sich vorwärts und rückwärts durch die Aufzeichnung zu bewegen. Der blaue Rahmen um das Miniaturbild kennzeichnet die Folie, die gerade angezeigt wird.
 
 ===== Werkzeuge
 
@@ -394,7 +394,7 @@ image:icons/editor-redo.svg[,25]:: Gelöschten Bearbeitungsschritt wiederherstel
 image:icons/editor-cut.svg[,25]:: Aktuellen Auswahlbereich entfernen.
 image:icons/editor-adjust-volume.svg[,25]:: Lautstärke im Auswahlbereich anpassen.
 image:icons/editor-cut-page.svg[,25]:: Aktuelle Folie entfernen.
-image:icons/editor-replace-page.svg[,25]:: Aktuelle Folie durch eine andere ersetzen.
+image:icons/editor-replace-page.svg[,25]:: Aktuelle Folien durch andere ersetzen.
 image:icons/editor-import.svg[,25]:: Eine Aufzeichnung an die aktuelle Zeitmarker-Position importieren.
 image:icons/editor-zoom-out.svg[,25]:: In die Waveform reinzoomen.
 image:icons/editor-zoom-in.svg[,25]:: Aus der Waveform rauszoomen.
@@ -402,7 +402,7 @@ image:icons/editor-collapse-selection.svg[,25]:: Auswahlbereich zusammenführen.
 
 ===== Annotationen
 
-In der Annotationen-Leiste werden Markierungen für alle aufgezeichneten Seitenwechsel und Annotationen angezeigt. Die Markierungen passen sich automatisch an den Zeitabschnitt an, den Sie sich gerade anschauen, reinzoomen oder durchblättern. Die Seitenwechsel werden durch ein Rechteck mit der Seitennummer markiert. Alle Annotationen werden durch jeweils kleine rote Balken markiert. Folgen viele Annotationen, die zeitlich nah beieinander durchgeführt wurden, so kann es zu einem breiten roten Balken führen. Dies ist vor allem bei Stift-Annotationen der Fall, da jeder Punkt, den der Stift durchläuft, als eine einzelne Markierung zählt.
+In der Annotationen-Leiste werden Markierungen für alle aufgezeichneten Seitenwechsel und Annotationen angezeigt. Die Markierungen passen sich automatisch an den Zeitabschnitt an, den Sie sich gerade anschauen, reinzoomen oder durchblättern. Die Seitenwechsel werden durch ein Rechteck mit der Seitennummer markiert. Seitenwechselzeitpunkte können durch das Verschieben der Markierungen verändert werden. Das Verschieben der Seitenwechselzeitpunkte ist in beide Richtungen beschränkt und kann nicht weiter als die nächste Annotation verschoben werden. Falls ein Seitenwechsel auf dieselbe Stelle wie ein anderer Seitenwechsel verschoben wird, dann besteht die Möglichkeit, die Seite zu entfernen, ohne dass die Audiospur verändert wird. Alle Annotationen werden durch jeweils rote Balken markiert. Ein roter Balken markiert die gesamte Dauer einer Annotation.
 
 ==== Schneiden
 
@@ -439,20 +439,24 @@ image::editor-delete-page.png[width=25%,pdfwidth=25%,align=center]
 2. Klicken Sie auf _Seite entfernen_ im Kontextmenü.
 
 
-==== Folie ersetzen
+==== Folien ersetzen
 
 Sie können Folien im aufgezeichneten Dokument ersetzen. Diese Funktion ist hilfreich, wenn Sie eine Aufzeichnung wiederverwenden und zum Beispiel nur das Datum anpassen möchten, oder Fehler wie bei-
 spielsweise Rechtschreibfehler beheben möchten. Alle Annotationen und Audio, die auf dieser Folie gemacht wurden, bleiben unverändert erhalten.
 
 1. Navigieren Sie auf eine Folie, die Sie ersetzen möchten.
 2. Klicken Sie auf _Aktuelle Seite ersetzen_ image:icons/editor-replace-page.svg[,25,pdfwidth=22px] über der Waveform.
-3. Im Datei-Auswahl-Dialog einen Foliensatz auswählen, in dem sich die neue Folie befindet.
-4. Wählen Sie im Foliensatz die neue Folie aus und klicken btn:[Ersetzen].
-5. Die ausgewählte Folie wurde ersetzt.
+3. Im Datei-Auswahl-Dialog einen Foliensatz auswählen, in welchem sich die neuen Folien befinden.
+4. Es wird ein Dialog geöffnet, welcher den neuen Foliensatz sowie die aktuelle Folie aus dem aktuellen Foliensatz ausgewählt hat. In diesem kann man einzelne oder mehrere Folien auf einmal ersetzen.
+5. Falls der aktuelle und der neue Foliensatz die gleiche Seitenanzahl haben, können Sie die Option "Alle Seiten ersetzen" auswählen, um alle Seiten zu ersetzen.
+6. Wählen Sie "Ausgewählte Seite ersetzen" um nur einzelne Folien zu ersetzen.
+7. Wählen Sie im aktuellen und neuen Foliensatz die Folie aus, die Sie ersetzen wollen und klicken Sie auf btn:[Ersetzen].
+8. Es wird automatisch die nächste Folie, falls möglich, in beiden Foliensätzen ausgewählt. Und Sie können mit dem Ersetzen der Folien fortsetzen.
+9. Wenn Sie fertig sind klicken Sie auf btn:[Änderungen speichern] oder falls Sie die Seiten nicht ersetzen wollen klicken Sie auf btn:[Abbrechen].
 
 ==== Lautstärke anpassen
 
-Es kann vorkommen, dass Sie die Lautstärke in einzelnen Passagen ihrer Aufzeichnung verändern möchten. Dies kann zum Beispiel nach dem Einfügen einer neuen Passage der Fall sein.
+Es kann vorkommen, dass Sie die Lautstärke in einzelnen Passagen Ihrer Aufzeichnung verändern möchten. Dies kann zum Beispiel nach dem Einfügen einer neuen Passage der Fall sein.
 
 1. Navigieren Sie in der Waveform an die gewünschte Position.
 2. Bewegen Sie den Zeitmarker image:icons/editor-slider.svg[,25,pdfwidth=22px] oder die sekundären Zeitmarker image:icons/editor-slider-left.svg[,25,pdfwidth=22px]image:icons/editor-slider-right.svg[,25,pdfwidth=22px] nach links oder rechts, um den gewünschten Bereich auszuwählen.
@@ -470,13 +474,13 @@ image::editor-timeline-select-2.png[width=70%,pdfwidth=70%,align=center]
 .Lautstärke anpassen im Auswahlbereich
 image::editor-timeline-adjust-volume.png[width=70%,pdfwidth=70%,align=center]
 +
-TIP: Es wird empfohlen den grünen Auswahlbereich mit image:icons/editor-collapse-selection.svg[,25,pdfwidth=22px] zusammenzufalten.
+TIP: Es wird empfohlen, den grünen Auswahlbereich mit image:icons/editor-collapse-selection.svg[,25,pdfwidth=22px] zusammenzufalten.
 
 5. Sollten Sie es sich anders überlegt haben, so können Sie die Anpassung mit btn:[X] [2] oder image:icons/editor-undo.svg[,25,pdfwidth=22px] rückgängig machen.
 
 ==== Rauschunterdrückung
 
-Je nach Qualität des Mikrofons, wird neben der Sprache auch Rauschen aufgezeichnet. Um die Sprachverständlichkeit zu erhöhen, kann ein Rauschunterdrückungsverfahren angewandt werden. Da statistische Rauschsignale sich im Allgemeinen nicht gut komprimieren lassen, führt die Rauschunterdrückung zu einer Reduktion der Dateigröße einer komprimierten Video-Aufzeichnung.
+Je nach Qualität des Mikrofons wird neben der Sprache auch Rauschen aufgezeichnet. Um die Sprachverständlichkeit zu erhöhen, kann ein Rauschunterdrückungsverfahren angewandt werden. Da statistische Rauschsignale sich im Allgemeinen nicht gut komprimieren lassen, führt die Rauschunterdrückung zu einer Reduktion der Dateigröße einer komprimierten Video-Aufzeichnung.
 
 1. Wählen Sie in der Waveform mit den Zeitmarkern einen Bereich mit Stille aus, d.h. ohne Sprach-/Audiosignal. Die Pegel sind in der Waveform nahe der Mittellinie (<<lectureEditor-timeline-silence>>).
 +
