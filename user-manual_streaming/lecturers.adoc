@@ -403,6 +403,29 @@ image:icons/editor-collapse-selection.svg[,25]:: Auswahlbereich zusammenführen.
 ===== Annotationen
 
 In der Annotationen-Leiste werden Markierungen für alle aufgezeichneten Seitenwechsel und Annotationen angezeigt. Die Markierungen passen sich automatisch an den Zeitabschnitt an, den Sie sich gerade anschauen, reinzoomen oder durchblättern. Die Seitenwechsel werden durch ein Rechteck mit der Seitennummer markiert. Seitenwechselzeitpunkte können durch das Verschieben der Markierungen verändert werden. Das Verschieben der Seitenwechselzeitpunkte ist in beide Richtungen beschränkt und kann nicht weiter als die nächste Annotation verschoben werden. Falls ein Seitenwechsel auf dieselbe Stelle wie ein anderer Seitenwechsel verschoben wird, dann besteht die Möglichkeit, die Seite zu entfernen, ohne dass die Audiospur verändert wird. Alle Annotationen werden durch jeweils rote Balken markiert. Ein roter Balken markiert die gesamte Dauer einer Annotation.
+[#lectureEditor-annotations]
+.lectureEditor-Annotationen
+image::editor-move-page-before.png[width=70%,pdfwidth=70%,align=center]
+Das Verschieben von Seitenwechselzeitpunkten kann in drei Fälle aufgeteilt werden. In jedem Fall ändert sich nur der Seitenwechselzeitpunkt, nicht aber die Gesamtlänge der Aufzeichnung und der Audiospur.
+
+* Fall 1:
+Sie verschieben einen Seitenwechselzeitpunkt und der Zeitpunkt ändert sich.
+[#lectureEditor-annotations-moved]
+.Seitenwechselzeitpunkt verschoben
+image::editor-move-page-after.png[width=70%,pdfwidth=70%,align=center]
+
+* Fall 2:
+Sie verschieben einen Seitenwechselzeitpunkt und dies sorgt dafür, dass eine Seite für weniger als 1 Sekunde angezeigt wird. Der Zeitpunkt ändert sich und es wird ein Informationsdialog geöffnet.
+[#lectureEditor-annotations-moved-dialog]
+.Seitenwechselzeitpunkt Informationsdialog
+image::editor-move-page-notification.png[width=60%,pdfwidth=60%,align=center]
+
+* Fall 3:
+Sie verschieben einen Seitenwechselzeitpunkt und dies sorgt dafür, dass eine Seite nicht mehr angezeigt wird. Es öffnet sich ein Dialog und Sie können auswählen, ob die Aktion rückgängig gemacht werden soll, oder ob die Seite entfernt werden soll.
+[#lectureEditor-annotations-hiden-dialog]
+.Seitenwechselzeitpunkt Entfernungsdialog
+image::editor-hide-page-dialog.png[width=60%,pdfwidth=60%,align=center]
+
 
 ==== Schneiden
 
@@ -448,6 +471,10 @@ spielsweise Rechtschreibfehler beheben möchten. Alle Annotationen und Audio, di
 2. Klicken Sie auf _Aktuelle Seite ersetzen_ image:icons/editor-replace-page.svg[,25,pdfwidth=22px] über der Waveform.
 3. Im Datei-Auswahl-Dialog einen Foliensatz auswählen, in welchem sich die neuen Folien befinden.
 4. Es wird ein Dialog geöffnet, welcher den neuen Foliensatz sowie die aktuelle Folie aus dem aktuellen Foliensatz ausgewählt hat. In diesem kann man einzelne oder mehrere Folien auf einmal ersetzen.
++
+[#lectureEditor-replace-page]
+.Folien aus der Aufzeichnung ersetzen
+image::editor-replace-page-dialog.png[width=70%,pdfwidth=70%,align=center]
 5. Falls der aktuelle und der neue Foliensatz die gleiche Seitenanzahl haben, können Sie die Option "Alle Seiten ersetzen" auswählen, um alle Seiten zu ersetzen.
 6. Wählen Sie "Ausgewählte Seite ersetzen" um nur einzelne Folien zu ersetzen.
 7. Wählen Sie im aktuellen und neuen Foliensatz die Folie aus, die Sie ersetzen wollen und klicken Sie auf btn:[Ersetzen].
