@@ -375,7 +375,7 @@ image::editor-main.png[width=90%,pdfwidth=90%,align=center]
 
 [horizontal]
 image:icons/editor-export-recording.svg[,25]:: Zeigt Bedien- und Einstellungselemente an, um die Aufzeichnung in ein komprimiertes Format zu konvertieren.
-image:icons/editor-noise-reduction.svg[,25]:: Zeigt Bedien- und Einstellungselemente für die Rauschunterdrückung an.
+image:icons/editor-noise-reduction.svg[,25]:: Zeigt Bedien- und Einstellungselemente für die Rauschunterdrückung und zum Normalisieren der Lautheit an.
 image:icons/editor-page-events.svg[,25]:: Zeigt alle Annotationen zu der aktuell angezeigten Folie an. Über diese Ansicht können einzelne Annotationen aus der Folie entfernt werden.
 
 ===== Folienvorschau
@@ -386,19 +386,47 @@ In diesem Bereich werden Miniaturbilder für die einzelnen aufgezeichneten Folie
 
 [#lectureEditor-toolbar]
 .lectureEditor-Werkzeugleiste
-image::editor-toolbar.png[width=45%,pdfwidth=45%,align=center]
+image::editor-toolbar.png[width=95%,pdfwidth=95%,align=center]
 
+====== Aufzeichnungswerkzeuge
 [horizontal]
-image:icons/editor-undo.svg[,25]:: Letzten Bearbeitungsschritt rückgängig machen.
-image:icons/editor-redo.svg[,25]:: Gelöschten Bearbeitungsschritt wiederherstellen.
-image:icons/editor-cut.svg[,25]:: Aktuellen Auswahlbereich entfernen.
-image:icons/editor-adjust-volume.svg[,25]:: Lautstärke im Auswahlbereich anpassen.
-image:icons/editor-cut-page.svg[,25]:: Aktuelle Folie entfernen.
-image:icons/editor-replace-page.svg[,25]:: Aktuelle Folien durch andere ersetzen.
-image:icons/editor-import.svg[,25]:: Eine Aufzeichnung an die aktuelle Zeitmarker-Position importieren.
-image:icons/editor-zoom-out.svg[,25]:: In die Waveform reinzoomen.
-image:icons/editor-zoom-in.svg[,25]:: Aus der Waveform rauszoomen.
-image:icons/editor-collapse-selection.svg[,25]:: Auswahlbereich zusammenführen.
+image:icons/editor-undo.svg[undo,25]:: Letzten Bearbeitungsschritt rückgängig machen.
+image:icons/editor-redo.svg[redo,25]:: Gelöschten Bearbeitungsschritt wiederherstellen.
+image:icons/editor-cut.svg[cut,25]:: Aktuellen Auswahlbereich entfernen.
+image:icons/editor-adjust-volume.svg[adjust volume,25]:: Lautstärke im Auswahlbereich anpassen.
+image:icons/editor-cut-page.svg[cut page,25]:: Aktuelle Folie entfernen.
+image:icons/editor-replace-page.svg[replace page,25]:: Aktuelle Folien durch andere ersetzen.
+image:icons/editor-import.svg[import,25]:: Eine Aufzeichnung an die aktuelle Zeitmarker-Position importieren.
+image:icons/editor-split-recording.svg[split recording,25]:: Die Aufzeichnung an der aktuellen Zeitmarker-Position aufteilen und einen Teil als eine eigene Aufzeichnungsdatei abspeichern.
+image:icons/editor-zoom-in.svg[zoom in,25]:: In die Waveform hineinzoomen.
+image:icons/editor-zoom-out.svg[zoom out,25]:: Aus der Waveform herauszoomen.
+
+====== Annotationswerkzeuge
+[horizontal]
+image:icons/tools/pen.svg[,25]:: Stiftwerkzeug auswählen.
+image:icons/tools/highlighter.svg[,25]:: Markiererwerkzeug auswählen.
+image:icons/tools/pointer.svg[,25]:: Laserpointerwerkzeug auswählen.
+image:icons/tools/text-selection.svg[,25]:: Textauswahlwerkzeug auswählen.
+image:icons/tools/line.svg[,25]:: Linienwerkzeug auswählen.
+image:icons/tools/arrow.svg[,25]:: Pfeilwerkzeug auswählen.
+image:icons/tools/rectangle.svg[,25]:: Rechteckwerkzeug auswählen.
+image:icons/tools/ellipse.svg[,25]:: Ellipsenwerkzeug auswählen.
+image:icons/tools/selection.svg[,25]:: Auswahlwerkzeug auswählen.
+image:icons/tools/eraser.svg[,25]:: Radierwerkzeug auswählen.
+image:icons/tools/text.svg[,25]:: Textwerkzeug auswählen.
+image:icons/tools/trash.svg[,25]:: Löschwerkzeug auswählen.
+image:icons/tools/zoom.svg[,25]:: Zoomwerkzeug auswählen.
+image:icons/tools/pan.svg[,25]:: Bewegungswerkzeug auswählen.
+image:icons/tools/zoom-out.svg[,25]:: Zoom-Out-Werkzeug auswählen.
+image:icons/tools/width-selection.png[,25]:: Stiftbreitenauswahl.
+
+Um ein Annotationswerkzeug zu verwenden, kann ein Werkzeug ausgewählt werden, danach kann je nach Werkzeug die Farbe und die Stiftbreite ausgewählt werden. Die Annotation kann erstellt werden, indem auf die Folie gezeichnet wird. Beim Ansetzen des Werkzeugs wird die Wiedergabe automatisch gestartet, welche beim Absetzen wieder in den vorherigen Stand zurückgesetzt wird. Die Annotation wird an die jeweiligen Zeitmarker-Positionen in Echtzeit abgespeichert.
+
+CAUTION: Annotationen dürfen sich nicht überschneiden. Außerdem muss eine Annotation immer auf derselben Folie enden, auf der diese auch angefangen hat.
+
+Das Auswahlwerkzeug funktioniert anders als im lecturePresenter. Beim Verschieben einer schon existierenden Annotation wird die initiale Platzierung geändert und nicht am aktuellen Zeitpunkt verschoben.
+
+Mit dem Textwerkzeug können neue Texte erstellt werden, welche an dem ausgewählten Zeitpunkt atomar erstellt werden. Sobald ein Text den Fokus verliert wird dieser abgespeichert und kann nicht mehr geändert werden.
 
 ===== Annotationen
 
@@ -481,6 +509,18 @@ image::editor-replace-page-dialog.png[width=70%,pdfwidth=70%,align=center]
 8. Es wird automatisch die nächste Folie, falls möglich, in beiden Foliensätzen ausgewählt. Und Sie können mit dem Ersetzen der Folien fortsetzen.
 9. Wenn Sie fertig sind klicken Sie auf btn:[Änderungen speichern] oder falls Sie die Seiten nicht ersetzen wollen klicken Sie auf btn:[Abbrechen].
 
+==== Aufzeichnung aufteilen
+.Aufzeichnung aufteilen
+image::editor-recording-split-dialog.png[width=70%,pdfwidth=70%,align=center]
+Nach der Auswahl des Zeitpunktes mittels der Zeitmarker-Position kann ausgewählt werden, ob der Anfang oder das Ende der Aufzeichnung herausgeschnitten und als eine eigene Aufzeichnungsdatei abgespeichert werden soll.
+
+==== Aufzeichnung importieren
+.Lautstärke beim Importieren angleichen
+image::editor-recording-import-dialog.png[width=70%,pdfwidth=70%,align=center]
+
+Nach der Auswahl einer Aufzeichnung kann ausgewählt werden, ob die Lautstärke der neuen Aufzeichnung an die bestehende Aufzeichnung angegleicht werden soll, um einen konsistenten Lautstärkepegel über die gesamte Aufzeichnung zu gewährleisten.
+
+
 ==== Lautstärke anpassen
 
 Es kann vorkommen, dass Sie die Lautstärke in einzelnen Passagen Ihrer Aufzeichnung verändern möchten. Dies kann zum Beispiel nach dem Einfügen einer neuen Passage der Fall sein.
@@ -505,7 +545,8 @@ TIP: Es wird empfohlen, den grünen Auswahlbereich mit image:icons/editor-collap
 
 5. Sollten Sie es sich anders überlegt haben, so können Sie die Anpassung mit btn:[X] [2] oder image:icons/editor-undo.svg[,25,pdfwidth=22px] rückgängig machen.
 
-==== Rauschunterdrückung
+==== Audioeffekte
+===== Rauschunterdrückung
 
 Je nach Qualität des Mikrofons wird neben der Sprache auch Rauschen aufgezeichnet. Um die Sprachverständlichkeit zu erhöhen, kann ein Rauschunterdrückungsverfahren angewandt werden. Da statistische Rauschsignale sich im Allgemeinen nicht gut komprimieren lassen, führt die Rauschunterdrückung zu einer Reduktion der Dateigröße einer komprimierten Video-Aufzeichnung.
 
@@ -540,6 +581,16 @@ image::editor-nr-dialog-test.png[width=25%,pdfwidth=25%,align=center]
 +
 Der Dialog schließt sich automatisch, nachdem die Rauschunterdrückung erfolgreich durchgelaufen ist.
 
+
+===== Lautheit-Normalisierung
+.Lautheit-Normalisierung
+image::editor-loudness-normalization.png[width=25%,pdfwidth=25%,align=center]
+
+Lautheit-Normalisierung trägt dazu bei, einen einheitlichen Lautstärkepegel innerhalb der Aufnahme durch Anpassen der wahrgenommenen Lautstärke zu gewährleisten.
+
+Durch diese Funktion wird sichergestellt, dass die Audiodaten gleichmäßig, ohne plötzliche Lautstärkespitzen oder -abfälle, wiedergegeben werden. Auf diese Weise wird die Gesamtqualität des Hörerlebnisses verbessert.
+
+Es wird empfohlen einen Wert zwischen -23 (European Broadcasting Union Standard) und -14 (für Online-Medien verwendet) LUFS (Loudness Units Full Scale) zu verwenden. Der gesamte Bereich der Lautstärkeeinstellung reicht von -70 (leise) bis -5 (laut). Die Durchführung dieses Schrittes kann einige Minuten dauern.
 
 [#lectureEditor-video]
 ==== Video-Export
@@ -615,9 +666,27 @@ NOTE: Je höher die Werte, desto besser ist die Qualität des Videos. Mit besser
 
 |kbd:[Strg + D]
 |Aktuelle Folie entfernen.
+
+|kbd:[Pfeil links]
+|Je nach Zoomgrad in der Aufzeichnung zurückspringen.
+
+|kbd:[Pfeil rechts]
+|Je nach Zoomgrad in der Aufzeichnung vorspringen.
+
+|kbd:[Pfeil oben] oder kbd:[Bild oben]
+|Auf die vorherige Folie springen.
+
+|kbd:[Pfeil unten] oder kbd:[Bild unten]
+|Auf die nächste Folie springen.
+
+|kbd:[Leertaste]
+|Abspielen anhalten/fortsetzen.
+
+|kbd:[POS 1]
+|Auf die erste Folie springen.
+
+|kbd:[END]
+|Auf die letzte Folie springen.
 |===
-
-
-
 
 <<<
