@@ -3,7 +3,8 @@
 [frame=ends, grid=none, cols="1,2,6"]
 |===
 | Version | Datum | Bemerkung
-
+| 1.4.3 | 20. Sep 2023 | <<lectureEditor, lectureEditor>>: Neue Funktionen zum Hinzufügen von neuen Annotationen, Normalisieren der Lautstärke, sowie Aufsplitten der Aufnahme hinzugefügt. Neue Shortcuts hinzugefügt.
+| 1.4.2 | 29. Mai 2023 | <<lectureEditor, lectureEditor>>: Neue Funktionen zum Ersetzen von Folien und Verschieben von Folienwechselzeitpunkten hinzugefügt.
 | 1.4.1
 | 21. Oktober 2022
 | Kapitel <<lecturePresenter, lecturePresenter>> eingeführt und dazugehörige Abschnitte zusammengeführt. Kapitel <<lectureEditor, lectureEditor>> neu hinzugefügt.
