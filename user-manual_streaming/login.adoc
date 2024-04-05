@@ -21,4 +21,9 @@ Stimmen Sie der Informationsweitergabe zu, so klicken Sie auf den Button btn:[Ak
 
 NOTE: Klicken Sie auf btn:[Ablehnen], dann ist das Anmelden auf der Webseite nicht möglich. Als Dozent/in können Sie keine Kurse anbieten. Als Teilnehmer/in können Sie an Kursen nicht teilnehmen.
 
+[#guest-login]
+== Gast-Login
+
+Personen, die nicht Angehörige der TU Darmstadt sind und sich daher nicht über eine zentrale Web-Authentifizierung per Single Sign-On (SSO) anmelden können, haben die Möglichkeit, sich über einen Gastzugang im Portal anzumelden. Um sich als Gast anzumelden, wird eine Einladung in einen Kurs vorausgesetzt. Die Einladung wird von Kurs-Organisator:innen vorgenommen, wobei zur E-Mail-Adresse und Vor- und Nachnamen der einzuladenden Person ein zufällig generierter Token erstellt wird. Diesen Token nutzen Gäste zusammen mit ihrer E-Mail-Adresse zum Anmelden im Portal.
+
 <<<

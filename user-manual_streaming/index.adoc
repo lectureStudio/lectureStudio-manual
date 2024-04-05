@@ -4,13 +4,15 @@ include::locale/attributes-de.adoc[]
 :toc:
 :toc: left
 :toclevels: 4
-:Author: Das lectureStudio-Team
-:revnumber: 1.4.1
+:Author: Das lectureStudio-Team - https://www.lecturestudio.org
+:revnumber: 6.1.0
 :revdate: {localdate}
 :stylesdir: styles
 :stylesheet: custom.css
 :imagesdir: ./images
 :xrefstyle: short
+:sectlinks:
+:sectanchors:
 :lang: de
 :icons: font
 :linkcss:

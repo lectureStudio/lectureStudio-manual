@@ -11,10 +11,24 @@ Ein Kurs kann in wenigen Schritten erstellt werden.
 . Füllen Sie die Felder mit ihren kursspezifischen Inhalten aus.
 . Anschließend klicken Sie auf btn:[Erstellen].
 
+[#course-visibility]
+==== Sichtbarkeit von Kursen
+
+Es besteht die Möglichkeit Kurse vor allen anderen Portalnutzern zu verbergen. Verborgene Kurse werden im Portal nirgendwo gelistet und können nur über Zugangslinks besucht werden. Wenn Sie Ihren Kurs ausblenden, gehen Sie sicher, dass das Privileg _"Am Kurs teilnehmen"_ in den jeweiligen Rollen des Kurses deaktiviert ist.
+
+Beim Erstellen des Kurses wird ein initialer Zugangslink erzeugt. Es können beliebig viele Zugangslinks erstellt werden. Für jeden Zugangslink kann ein Alias und ein Ablaufdatum gewählt werden. Das Erstellen eines Zugangslinks mit einem Alias hat den Vorteil, dass der Kurs über eine kürzere und einprägsamere URL geöffnet werden kann. Die Oberfläche zur Konfiguration der Sichtbarkeit ist in <<course-visibility-form>> zu sehen.
+
+TIP: Durch die <<course-user-roles, Benutzerverwaltung>> haben Sie eine feingranulare Kontrolle wer Zugriff auf den Kurs bekommt. Fügen Sie hierzu Benutzer:innen dem Kurs hinzu und weisen diesen die gewünschte Rolle zu. Achten Sie hierbei, dass für die zugewiesene Rolle das Privileg _"Am Kurs teilnehmen"_ aktiviert ist.
+
+[#course-visibility-form]
+.Sichtbarkeit des Kurses und Zugangslinks konfigurieren
+image::course-visibility.png[width=50%,pdfwidth=50%,align=center]
+
+
 [#course-roles]
 ==== Kursrollen
 
-Für Kurse gibt es drei Rollen, nämlich Organisator:in, Co-Organisator:in und Teilnehmer:in. Die Rollen sind hierarchisch geordnet und können im Kurs dynamisch zugewiesen werden. Jede Rolle erfüllt spezielle Aufgaben und ist mit den entsprechenden Fähigkeiten verknüpft. Jeder Rolle können Privilegien zugewiesen und entzogen werden.
+Für Kurse gibt es fünf Rollen, nämlich Organisator:in, Co-Organisator:in, Teilnehmer:in, registrierte:r Teilnehmer:in und Gastdozent:in. Die Rollen sind hierarchisch geordnet und können im Kurs dynamisch zugewiesen werden. Jede Rolle erfüllt spezielle Aufgaben und ist mit den entsprechenden Fähigkeiten verknüpft. Jeder Rolle können Privilegien zugewiesen und entzogen werden.
 
 TIP: Als Ersteller:in eines Kurses erhalten Sie automatisch alle existierenden Privilegien. Ihnen kann niemand Privilegien für Ihren eigenen Kurs nehmen.
 
@@ -25,7 +39,8 @@ Organisator:innen verfügen über umfassende Privilegien. Diese können administ
 * Einstellungen des Kurses ändern
 * Rollen und Privilegien von Teilnehmern ändern
 * Kurs löschen
-* Kurs streamen 
+* Kurs streamen
+* Teilnehmer:innen des Kurses bannen
 
 ===== Co-Organisator:in
 
@@ -35,6 +50,7 @@ Co-Organisator:innen verfügen über eine Teilmenge der Privilegien von Organisa
 
 Die Rolle Teilnehmer:in besitzen alle Personen im Portal, sowohl Studierende als auch Lehrende und damit alle, die Ihren Kurs betreten. Weisen Sie hier die Privilegien so zu, um zu bestimmen, ob und wie Teilnehmende mit Ihnen und untereinander kommunizieren können. Zu den wichtigsten Privilegien dieser Rolle gehören beispielsweise:
 
+* Am Kurs teilnehmen
 * Chat-Nachrichten lesen
 * Chat-Nachrichten an alle Teilnehmer:innen senden
 * Chat-Nachrichten an (Co)-Organisator:innen senden
@@ -42,6 +58,15 @@ Die Rolle Teilnehmer:in besitzen alle Personen im Portal, sowohl Studierende als
 * Teilnehmer:innen des Kurses sehen
 * An Quizzen teilnehmen
 * Redebeitrag durch Melden starten 
+
+===== Registrierte:r Teilnehmer:in
+
+Diese Rolle existiert, um eine präzisere Kontrolle über die Kursteilnehmer:innen zu ermöglichen. Sie basiert auf der Rolle Teilnehmer:in und verfügt standardmäßig über dieselben Privilegien. In Kombination mit dem Privileg _"Am Kurs teilnehmen"_ können Organisator:innen den Zugang zu ihren Kursen einschränken, indem sie das Privileg _"Am Kurs teilnehmen"_ aus der Teilnehmerrolle entfernen und es nur in dieser Rolle einrichten. Anschließend können Organisator:innen bestimmten Benutzern die Rolle Registrierte:r Teilnehmer:in zuweisen, um ihnen den Zugang zum Kurs zu ermöglichen.
+
+===== Gastdozent:in
+
+Gastdozent:innen verfügen über eine Teilmenge der Privilegien von Organisator:innen. Diese Rolle nehmen Personen einer externen Einrichtung ein, die über einen Gastzugang Vorträge streamen können. Der Zugang zum Portal erfolgt für Gäste über eine separate Login-Maske. Gäste können damit sowohl das Portal als auch die Anwendung lecturePresenter zum Streamen nutzen. Die Verwaltung von Gastdozent:innen ist im Abschnitt <<manage-guests>> beschrieben.
+
 
 [TIP]
 ====
@@ -54,17 +79,58 @@ Falls Sie möchten, dass Teilnehmende nur Ihnen und Co-Organisator:innen Chat-Na
 image::participants-unidirektional.png[width=50%,pdfwidth=50%,align=center]
 ====
 
-===== Zusätzliche Kursrollen zuweisen
+[#course-user-roles]
+==== Benutzerverwaltung
 
 Sie können einzelnen Teilnehmenden zusätzliche Kursrollen zuweisen, um die Privilegien dieser Person zu erhöhen. Verwenden Sie dazu die in <<course-roles-assign>> dargestellte Eingabemaske.
 
-1. In das Feld _Benutzername_ geben Sie die TU-ID des/der Angehörigen der TU Darmstadt ein.
-2. Die zusätzliche Kursrolle auswählen. Momentan kann _Organisator:in_ oder _Co-Organisator:in_ ausgewählt werden.
-3. Klicken Sie auf btn:[Hinzufügen].
+1. In das Feld _E-Mail-Adresse_ geben Sie die primäre Adresse des/der Angehörigen der TU Darmstadt ein.
+2. Die zusätzliche Kursrolle auswählen. Momentan können _Organisator:in_, _Co-Organisator:in_, _Teilnehmer:in_ oder _Registrierte:r Teilnehmer:in_ ausgewählt werden.
+3. Klicken Sie auf btn:[Hinzufügen] [1].
 
 [#course-roles-assign]
 .Zusätzliche Kursrollen zuweisen
 image::course-role-assign.png[width=50%,pdfwidth=50%,align=center]
+
+===== CSV-Import
+
+Statt einzelne Benutzer dem Kurs hinzuzufügen, wie oben beschrieben, besteht die Möglichkeit eine Gruppe von Nutzern über eine CSV-Tabelle zu importieren. Eine solche CSV-Tabelle können Sie aus einer Lehrplattform wie zum Beispiel Moodle zu Ihrem Kurs exportieren. Ein CSV-Import ist insbesondere dann hilfreich, wenn Ihr Kurs nur einer bestimmten Gruppe von Nutzern zugänglich gemacht werden soll. Gehen sie hierbei wie folgt vor:
+
+1. Klicken Sie auf btn:[CSV-Import] [2] und wählen eine CSV-Datei aus, die Sie laden möchten.
+2. Die Tabelle mit geladenen Personen wird angezeigt. Hier können noch einzelne Personen vor dem endgültigen Import entfernt werden [5].
+3. Wählen Sie über der Tabelle eine Kursrolle aus, die den Personen zugewiesen werden soll.
+4. Anschließend auf btn:[Importieren] klicken.
+
+Falls Sie nur die über CSV importierte Personen und deren Rollenzuweisung aus Ihrem Kurs entfernen möchten, klicken Sie hierfür auf btn:[Entferne CSV-Imports] [3].
+
+
+===== Benutzer:innen vom Kurs ausschließen
+
+Sind Teilnehmer:innen in Ihrem Kurs negativ aufgefallen oder Sie schlechte Erfahrungen mit jemandem gemacht haben, so können Sie Personen für Ihre Lehrveranstaltung sperren. Das Sperren lässt sich auf verschiedene Weisen durchführen, nämlich im Portal über die <<course-user-roles, Benutzerverwaltung>>, über die Oberfläche eines laufenden Kurses und in lecturePresenter als Dozent:in. Im Folgenden werden Schritte zum Sperren über die Benutzerverwaltung erläutert.
+
+1. Falls die zu sperrende Person noch nicht über die Benutzerverwaltung eingetragen worden ist, so fügen Sie diese Person, am besten mit der Rolle _Registrierte:r Teilnehmer:in_, hinzu.
+2. Auf btn:[Sperren] [4] klicken.
+3. Klicken Sie anschließend unten auf btn:[Aktualisieren], um die Änderungen zu speichern.
+
+Zum Entsperren, klicken Sie erneut auf btn:[Entsperren] [4].
+
+NOTE: Das Sperren und Entsperren funktioniert auch zur Laufzeit eines gerade gestreamten Kurses. Gesperrte Personen werden somit aus dem laufenden Kurs verwiesen.
+
+[#manage-guests]
+==== Gäste einladen
+
+Sie können Personen von externen Einrichtungen zu Ihrem Kurs einladen. Gäste haben die Möglichkeit das Portal wie alle anderen Teilnehmenden zu nutzen, um zum Beispiel den Kurs zu verfolgen oder auch selbst aktiv als Dozent:in teilnehmen. Das Formular zur Einladung von Gästen ist in <<course-add-guests>> zu sehen.
+
+[#course-add-guests]
+.Gäste einladen
+image::course-guests.png[width=50%,pdfwidth=50%,align=center]
+
+Gehen Sie hierbei wie folgt vor:
+
+1. Die E-Mail-Adresse, den Vor- und Nachnamen der einzuladenden Person eingeben und auf btn:[Hinzufügen] klicken.
+2. Es wird ein Zugriffstoken für diesen Gast generiert. Senden Sie diesen Zugriffstoken an die eingeladene Person weiter.
+3. Speichern Sie die Änderungen für Ihren Kurs ab, indem Sie unten auf btn:[Aktualisieren] klicken.
+
 
 === Zugriffstoken
 
@@ -361,6 +427,179 @@ Die Bildschirmfreigabe lässt sich pausieren. Dies ist insbesondere dann hilfrei
 Um die Bildschirmfreigabe zu beenden, klicken Sie auf image:icons/record-stop-tool.svg[,25,pdfwidth=22px] [2]. Das dazu erstellte Dokument wird geschlossen.
 
 
+==== Tastenbelegung
+
+. lecturePresenter-Tastenbelegung
+|===
+|Tasten |Aktion
+
+|kbd:[Strg + Q],
+|Anwendung schließen.
+
+|kbd:[Umschalt + H]
+|Tastenbelegung der Anwendung zeigen.
+
+|kbd:[ESC]
+|Ansicht schließen.
+
+|kbd:[Strg + O]
+|Dokument öffnen.
+
+|kbd:[Strg + F4]
+|Dokument schließen.
+
+|kbd:[Pos 1]
+|Erste Folie auswählen.
+
+|kbd:[Ende]
+|Letzte Folie auswählen.
+
+|kbd:[Pfeil rechts] oder kbd:[Pfeil unten] oder kbd:[Bild ab] oder kbd:[Leertaste]
+|Eine Folie weiter.
+
+|kbd:[Umschalt + Pfeil rechts]
+|10 Folien weiter.
+
+|kbd:[Pfeil links] oder kbd:[Pfeil oben] oder kbd:[Bild auf] oder kbd:[Rücktaste]
+|Eine Folie zurück.
+
+|kbd:[Umschalt + Pfeil links]
+|10 Folien zurück.
+
+|kbd:[F8]
+|Whiteboard öffnen.
+
+|kbd:[F9]
+|Neue Whiteboard-Folie.
+
+|kbd:[STRG + D]
+|Whiteboard-Folie löschen.
+
+|kbd:[Umschalt + Pfeil oben]
+|Zur ersten Overlay-Folie.
+
+|kbd:[Umschalt + Pfeil unten]
+|Zur letzten Overlay-Folie.
+
+|kbd:[Umschalt + Bild auf]
+|Zur ersten Folie vor dem Overlay.
+
+|kbd:[Umschalt + Bild ab]
+|Zur nächsten Folie nach dem Overlay.
+
+|kbd:[STRG + V]
+|Annotationen auf aktueller Folie kopieren.
+
+|kbd:[STRG + Bild ab]
+|Annotationen auf aktueller Folie der nächsten Folie hinzufügen.
+
+|kbd:[STRG + Z]
+|Rückgängig.
+
+|kbd:[STRG + Y]
+|Wiederherstellen.
+
+|kbd:[1]
+|Herauszoomen.
+
+|kbd:[STRG + 9]
+|In die Folie zoomen.
+
+|kbd:[F11]
+|Gezoomte Folie scrollen.
+
+|kbd:[F7]
+|Folienbereich erweitern.
+
+|kbd:[C] oder kbd:[ESC]
+|Alle Annotationen auf der Folie löschen.
+
+|kbd:[E] oder kbd:[4]
+|Einzelne Annotationen löschen.
+
+|kbd:[P] oder kbd:[3]
+|Stift-Annotationen erstellen.
+
+|kbd:[H] oder kbd:[5]
+|Highlighter-Annotationen erstellen.
+
+|kbd:[L] oder kbd:[2]
+|Pointer.
+
+|kbd:[T] oder kbd:[7]
+|Texte erstellen.
+
+|kbd:[STRG + H] oder kbd:[STRG + 6]
+|Texte hervorheben.
+
+|kbd:[I]
+|Linien erstellen.
+
+|kbd:[W]
+|Pfeile erstellen.
+
+|kbd:[R]
+|Rechtecke erstellen.
+
+|kbd:[O]
+|Ellipsen erstellen.
+
+|kbd:[STRG + Eingabe]
+|Quiz abspeichern.
+
+|kbd:[STRG + P] oder kbd:[STRG + Pause]
+|Aufzeichnung pausieren und wieder fortsetzen.
+
+|kbd:[B]
+|Lesezeichen erstellen.
+
+|kbd:[G]
+|Lesezeichen anspringen.
+
+|kbd:[M]
+|Folie zu Lesezeichen hinzufügen.
+
+|kbd:[Umschalt + M]
+|Letztes Lesezeichen anspringen.
+
+|kbd:[ALT + Eingabe]
+|Vollbildmodus aktivieren/deaktivieren.
+
+|kbd:[STRG + G]
+|Gitternetz aktivieren/deaktivieren.
+
+|kbd:[Q]
+|Gitternetz nur Präsentierenden zeigen/verstecken.
+
+|kbd:[S]
+|Stoppuhr starten und pausieren.
+
+|kbd:[PAUSE]
+|Stoppuhr pausieren.
+
+|kbd:[STRG + T]
+|Stoppuhr zurücksetzen.
+
+|kbd:[F1]
+|Benutzerdefinierte Farbe.
+
+|kbd:[F2]
+|Farbe 1.
+
+|kbd:[F3]
+|Farbe 2.
+
+|kbd:[F4]
+|Farbe 3.
+
+|kbd:[F5]
+|Farbe 4.
+
+|kbd:[F6]
+|Farbe 5.
+
+|===
+
 
 [#lectureEditor]
 === lectureEditor
@@ -637,7 +876,6 @@ NOTE: Je höher die Werte, desto besser ist die Qualität des Videos. Mit besser
 
 
 ==== Tastenbelegung
-
 
 . lectureEditor-Tastenbelegung
 |===
